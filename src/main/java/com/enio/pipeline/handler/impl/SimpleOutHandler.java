@@ -1,14 +1,15 @@
-package com.enio.pipeline.handler;
+package com.enio.pipeline.handler.impl;
 
 import com.enio.Channel.Channel;
 import com.enio.message.Message;
+import com.enio.pipeline.handler.OutHandler;
 
 import java.io.UnsupportedEncodingException;
 
 /**
  * Created by yuan on 10/23/16.
  */
-public class SimpleOutHandler implements OutHandler{
+public class SimpleOutHandler implements OutHandler {
 
 
     @Override

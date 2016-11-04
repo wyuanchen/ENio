@@ -34,8 +34,9 @@ public class ServerChannel extends Channel {
     @Override
     public void handleAcceptable() {
         try {
-            System.out.println("服务器接收到新的连接请求！");
             SocketChannel socketChannel=serverSocketChannel.accept();
+            if(socketChannel==null)
+                return;
             EventLoop eventLoop=eventLoops.selectOneEventLoop();
             ClientChannel clientChannel=new ClientChannel(socketChannel,SelectionKey.OP_READ,clientHandlers);
             Future<Channel> channelFuture=clientChannel.bindEventLoop(eventLoop);

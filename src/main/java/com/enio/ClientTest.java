@@ -4,8 +4,8 @@ import com.enio.Channel.Channel;
 import com.enio.Channel.ClientChannel;
 import com.enio.message.Message;
 import com.enio.pipeline.handler.InitialHandler;
-import com.enio.pipeline.handler.SimpleInHandler;
-import com.enio.pipeline.handler.SimpleOutHandler;
+import com.enio.pipeline.handler.impl.SimpleInHandler;
+import com.enio.pipeline.handler.impl.SimpleOutHandler;
 
 import java.util.Scanner;
 import java.util.concurrent.Future;

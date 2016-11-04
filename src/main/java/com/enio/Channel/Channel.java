@@ -63,7 +63,7 @@ public abstract class Channel {
                 SelectionKey key=channel.register(selector,initSelectionKeyOP);
                 key.attach(Channel.this);
                 Channel.this.key=key;
-                Channel.this.channel=key.channel();
+//                Channel.this.channel=key.channel();
                 Channel.channels.add(Channel.this);
                 Channel.this.handleInitial();
                 return Channel.this;

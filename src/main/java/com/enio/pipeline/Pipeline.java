@@ -29,7 +29,7 @@ public class Pipeline {
             if(!(handler instanceof InHandler))
                 continue;
             isContinue=((InHandler)handler).handleInputMessage(channel,message);
-            if(isContinue)
+            if(!isContinue)
                 return false;
         }
         return true;

@@ -1,8 +1,9 @@
-package com.enio.pipeline.handler;
+package com.enio.pipeline.handler.impl;
 
 import com.enio.Channel.Channel;
 import com.enio.buffer.EByteBuffer;
 import com.enio.message.Message;
+import com.enio.pipeline.handler.InHandler;
 
 import java.nio.charset.Charset;
 import java.util.LinkedList;
@@ -11,7 +12,7 @@ import java.util.List;
 /**
  * Created by yuan on 10/24/16.
  */
-public class SimpleInHandler implements InHandler{
+public class SimpleInHandler implements InHandler {
 
     private byte length;
     private EByteBuffer buffer;
@@ -43,6 +44,7 @@ public class SimpleInHandler implements InHandler{
         for(String s:strs){
             System.out.println(s);
         }
+        message.setData(strs);
         return true;
     }
 
