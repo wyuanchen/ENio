@@ -31,22 +31,12 @@ public class ClientBootstraper {
     public Future<Channel> connect(){
         try {
             SocketChannel socketChannel=SocketChannel.open();
-//            socketChannel.configureBlocking(false);
             socketChannel.connect(new InetSocketAddress(serverIP,serverPort));
             socketChannel.configureBlocking(false);
             clientChannel=new ClientChannel(socketChannel,SelectionKey.OP_READ,handlers);
             EventLoop eventLoop=eventLoopGroup.selectOneEventLoop();
             Future<Channel> future=clientChannel.bindEventLoop(eventLoop);
-//            if(socketChannel.connect(new InetSocketAddress(serverIP,serverPort))){
-//                System.out.println("the client connect to the server successfully in the first request!");
-//                //如果第一次请求连接就能够成功
-//                future=eventLoop.bindClientChannel(socketChannel, SelectionKey.OP_READ);
-//            }else{
-//                future=eventLoop.bindClientChannel(socketChannel, SelectionKey.OP_CONNECT);
-//            }
             return future;
-//            clientChannel=future.get();
-//            System.out.println("the client start successfully!");
         } catch (Exception e) {
             e.printStackTrace();
             return null;

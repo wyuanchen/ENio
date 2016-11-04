@@ -46,10 +46,6 @@ public class ServerBootstraper {
                     clientHandlers);
             EventLoop eventLoop=serverLoopGroup.selectOneEventLoop();
             Future<Channel> future=channel.bindEventLoop(eventLoop);
-//            Future<ServerChannel> future=eventLoop.bindServerChannel(serverSocketChannel, SelectionKey.OP_ACCEPT,clientLoopGroup,handlers);
-
-//            this.serverChannel=future.get();
-//            System.out.println("the server start successfully!");
             return future;
         } catch (Exception e) {
             e.printStackTrace();
@@ -61,10 +57,10 @@ public class ServerBootstraper {
      * add handler to the server handlers
      * @param handler
      */
-    public void addServerHandler(Handler handler){
+    public void addHandler(Handler handler){
         serverHandlers.add(handler);
     }
-    public void addServerHandler(List<Handler> handlerList){
+    public void addHandler(List<Handler> handlerList){
         serverHandlers.addAll(handlerList);
     }
 

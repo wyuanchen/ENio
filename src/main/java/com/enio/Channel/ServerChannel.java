@@ -2,12 +2,14 @@ package com.enio.Channel;
 
 import com.enio.eventLoop.EventLoop;
 import com.enio.eventLoop.EventLoopGroup;
+import com.enio.message.Message;
 import com.enio.pipeline.handler.Handler;
 
 import java.nio.channels.SelectionKey;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.util.List;
+import java.util.concurrent.Future;
 
 /**
  * Created by yuan on 10/8/16.
@@ -36,7 +38,9 @@ public class ServerChannel extends Channel {
             SocketChannel socketChannel=serverSocketChannel.accept();
             EventLoop eventLoop=eventLoops.selectOneEventLoop();
             ClientChannel clientChannel=new ClientChannel(socketChannel,SelectionKey.OP_READ,clientHandlers);
-            clientChannel.bindEventLoop(eventLoop);
+            Future<Channel> channelFuture=clientChannel.bindEventLoop(eventLoop);
+            Message message=new Message(channelFuture);
+            pipeLine.handleAcceptableMessage(this,message);
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -2,10 +2,7 @@ package com.enio.pipeline;
 
 import com.enio.Channel.Channel;
 import com.enio.message.Message;
-import com.enio.pipeline.handler.Handler;
-import com.enio.pipeline.handler.InHandler;
-import com.enio.pipeline.handler.InitialHandler;
-import com.enio.pipeline.handler.OutHandler;
+import com.enio.pipeline.handler.*;
 
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -82,6 +79,23 @@ public class Pipeline {
     }
 
     /**
+     * The method is invoked when the server channel accept a new connection from outside
+     * @param channel The Channel which has the pipeline
+     * @param message The message come from previous handler in the pipeline
+     */
+    public boolean handleAcceptableMessage(Channel channel,Message message) {
+        boolean isContinue=false;
+        for(Handler handler:handlers){
+            if(handler instanceof AcceptHandler){
+                isContinue=((AcceptHandler)handler).handlerAccept(channel,message);
+                if(!isContinue)
+                    return false;
+            }
+        }
+        return true;
+    }
+
+    /**
      * append the handler to the tail of pipeline
      * @param handler the handler need to be registered
      */
@@ -118,7 +132,6 @@ public class Pipeline {
             return;
         this.handlers.addAll(0,handlers);
     }
-
 
 
 
