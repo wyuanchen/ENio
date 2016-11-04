@@ -19,12 +19,6 @@ public class ServerTest {
                 channel.pipeline().addLast(new SimpleOutHandler());
             }
         });
-        enioServer.addClientHandler(new InitialHandler() {
-            @Override
-            public void onChannelInitialized(Channel channel, Message message) {
-                System.out.println("hello");
-            }
-        });
 //        enioServer.addClientHandler(new SimpleInHandler());
 //        enioServer.addClientHandler(new SimpleOutHandler());
         enioServer.connect();
