@@ -2,6 +2,7 @@ package com.enio.Channel;
 
 import com.enio.buffer.EByteBuffer;
 import com.enio.eventLoop.EventLoop;
+import com.enio.message.Message;
 import com.enio.pipeline.Pipeline;
 import com.enio.pipeline.handler.Handler;
 
@@ -30,6 +31,9 @@ public abstract class Channel {
     //the initial selection key option when the Channel is create
     private final int initSelectionKeyOP;
 
+    public Pipeline pipeline(){
+        return pipeLine;
+    }
 
     public Channel(SelectableChannel channel,int initSelectionKeyOP,List<Handler> handlers){
         this.channel=channel;
@@ -61,11 +65,14 @@ public abstract class Channel {
                 Channel.this.key=key;
                 Channel.this.channel=key.channel();
                 Channel.channels.add(Channel.this);
+                Channel.this.handleInitial();
                 return Channel.this;
             }
         });
         return future;
     }
+
+
 
 //    /**
 //     * This method will be invoked after the event loop bind the channel successfully
@@ -73,10 +80,16 @@ public abstract class Channel {
 //    abstract protected void bindEventLoopSuccessfully();
 
 
-    public void registerHanlders(List<Handler> handlers){
-        pipeLine.registerHandler(handlers);
+    private void registerHanlders(List<Handler> handlers){
+        pipeLine.addLast(handlers);
     }
 
+    /**
+     * The handle Channel initialization after the channel is bound to a eventLoop
+     */
+    private void handleInitial() {
+        pipeLine.handleChannelInitial(this,new Message());
+    }
 
     public void handle() throws IOException {
         if(!key.isValid())

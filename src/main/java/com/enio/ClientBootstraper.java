@@ -34,8 +34,7 @@ public class ClientBootstraper {
 //            socketChannel.configureBlocking(false);
             socketChannel.connect(new InetSocketAddress(serverIP,serverPort));
             socketChannel.configureBlocking(false);
-            clientChannel=new ClientChannel(socketChannel,SelectionKey.OP_READ);
-            clientChannel.registerHanlders(handlers);
+            clientChannel=new ClientChannel(socketChannel,SelectionKey.OP_READ,handlers);
             EventLoop eventLoop=eventLoopGroup.selectOneEventLoop();
             Future<Channel> future=clientChannel.bindEventLoop(eventLoop);
 //            if(socketChannel.connect(new InetSocketAddress(serverIP,serverPort))){

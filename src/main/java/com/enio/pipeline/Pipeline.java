@@ -3,16 +3,20 @@ package com.enio.pipeline;
 import com.enio.Channel.Channel;
 import com.enio.message.Message;
 import com.enio.pipeline.handler.Handler;
+import com.enio.pipeline.handler.InHandler;
+import com.enio.pipeline.handler.InitialHandler;
+import com.enio.pipeline.handler.OutHandler;
 
-import java.util.Collections;
-import java.util.LinkedList;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * Created by yuan on 10/18/16.
  */
 public class Pipeline {
-    protected List<Handler> handlers= Collections.synchronizedList(new LinkedList<Handler>());
+//    protected List<Handler> handlers= Collections.synchronizedList(new LinkedList<Handler>());
+    protected List<Handler> handlers=new CopyOnWriteArrayList<Handler>();
+
 
     /**
      * use the handler in pipeline to process the message which was received from outside,
@@ -25,7 +29,9 @@ public class Pipeline {
     public boolean handleInputMessage(Channel channel,Message message){
         boolean isContinue=false;
         for(Handler handler:handlers){
-            isContinue=handler.handleInputMessage(channel,message);
+            if(!(handler instanceof InHandler))
+                continue;
+            isContinue=((InHandler)handler).handleInputMessage(channel,message);
             if(isContinue)
                 return false;
         }
@@ -46,7 +52,9 @@ public class Pipeline {
         boolean isContinue=false;
         for(int i=length-1;i>=0;i--){
             handler=handlers.get(i);
-            isContinue=handler.handleOutputMessage(channel,message);
+            if(!(handler instanceof OutHandler))
+                continue;
+            isContinue=((OutHandler)handler).handleOutputMessage(channel,message);
             if(!isContinue)
                 return false;
         }
@@ -54,27 +62,64 @@ public class Pipeline {
     }
 
     /**
+     * This method is invoked only once after the channel is bound to a eventLoop,
+     * it's usually used to register the other handler after the channel is bound to a eventLoop
+     * @param channel
+     * @param message
+     * @return
+     */
+    public boolean handleChannelInitial(Channel channel,Message message){
+        boolean isContinue=false;
+        int len=handlers.size();
+        for(Handler handler:handlers){
+            if(handler instanceof InitialHandler){
+                ((InitialHandler)handler).onChannelInitialized(channel,message);
+                handlers.remove(handler);
+            }
+        }
+        return true;
+
+    }
+
+    /**
      * append the handler to the tail of pipeline
      * @param handler the handler need to be registered
      */
-    public void registerHandler(Handler handler) {
+    public void addLast(Handler handler) {
+        if(handler==null)
+            return;
         handlers.add(handler);
+    }
+
+    public void addFirst(Handler handler){
+        if(handler==null)
+            return;
+        handlers.add(0,handler);
+    }
+
+    public void insert(int index,Handler handler){
+        if(handler==null)
+            return;
+        handlers.add(index,handler);
     }
 
     /**
      * append all the handlers of the handlersList to the pipeline
-     * @param handlerList
+     * @param handlers
      */
-    public void registerHandler(List<Handler> handlerList){
-        if(handlerList==null)
+    public void addLast(List<Handler> handlers){
+        if(handlers==null)
             return;
-        for(Handler handler:handlerList){
-            if(handler.isShared())
-                handlers.add(handler);
-            else
-                handlers.add(handler.clone());
-        }
+        this.handlers.addAll(handlers);
     }
+
+    public void addFirst(List<Handler> handlers){
+        if(handlers==null)
+            return;
+        this.handlers.addAll(0,handlers);
+    }
+
+
 
 
 }

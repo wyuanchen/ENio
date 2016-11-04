@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Created by yuan on 10/24/16.
  */
-public class SimpleInHandler implements Handler{
+public class SimpleInHandler implements InHandler{
 
     private byte length;
     private EByteBuffer buffer;
@@ -46,18 +46,5 @@ public class SimpleInHandler implements Handler{
         return true;
     }
 
-    @Override
-    public boolean handleOutputMessage(Channel channel,Message message) {
-        return true;
-    }
 
-    @Override
-    public boolean isShared() {
-        return false;
-    }
-
-    @Override
-    public Handler clone() {
-        return new SimpleInHandler();
-    }
 }

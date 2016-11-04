@@ -64,7 +64,6 @@ public class ServerBootstraper {
     public void addServerHandler(Handler handler){
         serverHandlers.add(handler);
     }
-
     public void addServerHandler(List<Handler> handlerList){
         serverHandlers.addAll(handlerList);
     }

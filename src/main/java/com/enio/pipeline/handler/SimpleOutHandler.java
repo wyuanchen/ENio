@@ -8,11 +8,8 @@ import java.io.UnsupportedEncodingException;
 /**
  * Created by yuan on 10/23/16.
  */
-public class SimpleOutHandler implements Handler{
-    @Override
-    public boolean handleInputMessage(Channel channel,Message message) {
-        return true;
-    }
+public class SimpleOutHandler implements OutHandler{
+
 
     @Override
     public boolean handleOutputMessage(Channel channel,Message message) {
@@ -31,13 +28,4 @@ public class SimpleOutHandler implements Handler{
         return true;
     }
 
-    @Override
-    public boolean isShared() {
-        return false;
-    }
-
-    @Override
-    public Handler clone() {
-        return new SimpleOutHandler();
-    }
 }

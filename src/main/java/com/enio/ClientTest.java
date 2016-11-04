@@ -18,6 +18,7 @@ public class ClientTest {
         clientBootstraper.addHandler(new SimpleOutHandler());
         Future<Channel> future=clientBootstraper.connect();
         ClientChannel clientChannel=(ClientChannel) future.get();
+
 //        enioClient.send("hello world!");
 
         Scanner scanner=new Scanner(System.in);
