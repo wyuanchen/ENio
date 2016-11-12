@@ -14,7 +14,8 @@ import java.util.concurrent.*;
  * Created by yuan on 10/8/16.
  */
 public class EventLoop {
-    private ExecutorService executorService= Executors.newSingleThreadScheduledExecutor();
+//    private ExecutorService executorService= Executors.newSingleThreadScheduledExecutor();
+    private ExecutorService executorService=new PriorityThreadPoolExecutor(1,1,1,TimeUnit.SECONDS,new PriorityBlockingQueue());
     private Selector selector;
     private volatile boolean isEnd=false;
 
@@ -101,11 +102,8 @@ public class EventLoop {
         });
     }
 
-    public void submit(Runnable task) {
-        executorService.submit(task);
-    }
-    public <T> Future<T> submit(Callable<T> task){
-        return executorService.submit(task);
+    public <T> Future<T> submit(Event<T> event){
+        return executorService.submit(event);
     }
 
 

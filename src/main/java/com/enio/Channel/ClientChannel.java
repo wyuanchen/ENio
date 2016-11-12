@@ -57,9 +57,10 @@ public class ClientChannel extends Channel {
 
     @Override
     public void handleConnectable() {
-        eventLoop.submit(new Runnable() {
-            public void run() {
-//                System.out.println("客户端尝试请求连接！");
+        eventLoop.submit(new Event<Object>() {
+            @Override
+            public Object call() throws Exception {
+                System.out.println("客户端尝试请求连接！");
                 SocketChannel sc=(SocketChannel)channel;
                 try {
                     if(sc.finishConnect()){
@@ -70,8 +71,10 @@ public class ClientChannel extends Channel {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+                return null;
             }
         });
+
         super.handleConnectable();
     }
 
