@@ -15,7 +15,7 @@ import java.util.concurrent.*;
  */
 public class EventLoop {
 //    private ExecutorService executorService= Executors.newSingleThreadScheduledExecutor();
-    private ExecutorService executorService=new PriorityThreadPoolExecutor(1,1,1,TimeUnit.SECONDS,new PriorityBlockingQueue());
+    private ExecutorService executorService=new PriorityThreadPoolExecutor(1,1,1,TimeUnit.SECONDS,new PriorityBlockingQueue<Runnable>());
     private Selector selector;
     private volatile boolean isEnd=false;
 
