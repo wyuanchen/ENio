@@ -2,6 +2,7 @@ package com.enio.Channel;
 
 import com.enio.buffer.EByteBuffer;
 import com.enio.eventLoop.EventLoop;
+import com.enio.eventLoop.event.Event;
 import com.enio.message.Message;
 import com.enio.pipeline.Pipeline;
 import com.enio.pipeline.handler.Handler;
@@ -13,7 +14,6 @@ import java.nio.channels.Selector;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.concurrent.Callable;
 import java.util.concurrent.Future;
 
 /**
@@ -48,15 +48,20 @@ public abstract class Channel {
     }
 
 
-    public Pipeline getPipeLine(){
-        return this.pipeLine;
+    public EByteBuffer getWriteBuffer() {
+        return writeBuffer;
     }
-
+    public EByteBuffer getReadBuffer(){
+        return readBuffer;
+    }
+    public SelectionKey getKey(){
+        return key;
+    }
 
     public Future<Channel> bindEventLoop(EventLoop eventLoop) throws IOException {
         this.eventLoop=eventLoop;
         channel.configureBlocking(false);
-        Future<Channel> future=eventLoop.submit(new Callable<Channel>() {
+        Future<Channel> future=eventLoop.submit(new Event<Channel>(Event.Priority.Top) {
             @Override
             public Channel call() throws Exception {
                 Selector selector=eventLoop.getSelector();
@@ -69,6 +74,7 @@ public abstract class Channel {
                 return Channel.this;
             }
         });
+
         return future;
     }
 
@@ -116,6 +122,24 @@ public abstract class Channel {
 
     public void handleAcceptable() {
     }
+
+
+    /**
+     * Disconnect the channel
+     */
+    public void disconnect(){
+        eventLoop.submit(new Event<Object>(Event.Priority.Low) {
+            @Override
+            public Object call() throws Exception {
+                Message message=new Message();
+                pipeline().handleChannelClose(Channel.this,message);
+                channel.close();
+                return null;
+            }
+        });
+    }
+
+
 
 
 }

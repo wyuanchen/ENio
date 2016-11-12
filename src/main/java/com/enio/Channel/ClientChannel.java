@@ -1,5 +1,6 @@
 package com.enio.Channel;
 
+import com.enio.eventLoop.event.Event;
 import com.enio.message.Message;
 import com.enio.pipeline.handler.Handler;
 
@@ -97,19 +98,19 @@ public class ClientChannel extends Channel {
      * @param data the object need to be sent to outside,
      */
     public void send(Object data) {
-        eventLoop.submit(new Runnable() {
+        eventLoop.submit(new Event<Object>() {
             @Override
-            public void run() {
+            public Object call() throws Exception {
                 Message message=new Message(data);
                 boolean isHandleSuccessfully=pipeLine.handleOutputMessage(ClientChannel.this,message);
                 if(!isHandleSuccessfully)
-                    return;
+                    return null;
                 byte[] processedBytes= (byte[])message.getData();
                 writeBuffer.add(processedBytes);
                 key.interestOps(key.interestOps()|SelectionKey.OP_WRITE);
+                return null;
             }
         });
     }
-
 
 }

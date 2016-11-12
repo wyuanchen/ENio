@@ -96,6 +96,21 @@ public class Pipeline {
     }
 
     /**
+     * The method is invoked when the channel is going to close
+     */
+    public boolean handleChannelClose(Channel channel,Message message) {
+        boolean isContinue=false;
+        for(Handler handler:handlers){
+            if(handler instanceof CloseHandler){
+                isContinue=((CloseHandler)handler).handleCloseEvent(channel,message);
+                if(!isContinue)
+                    return false;
+            }
+        }
+        return true;
+    }
+
+    /**
      * append the handler to the tail of pipeline
      * @param handler the handler need to be registered
      */
@@ -132,7 +147,6 @@ public class Pipeline {
             return;
         this.handlers.addAll(0,handlers);
     }
-
 
 
 }

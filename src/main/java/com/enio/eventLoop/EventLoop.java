@@ -1,16 +1,14 @@
 package com.enio.eventLoop;
 
 import com.enio.Channel.Channel;
+import com.enio.eventLoop.event.Event;
 
 import java.io.IOException;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.util.Iterator;
 import java.util.Set;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
 
 /**
  * Created by yuan on 10/8/16.
@@ -18,7 +16,11 @@ import java.util.concurrent.Future;
 public class EventLoop {
     private ExecutorService executorService= Executors.newSingleThreadScheduledExecutor();
     private Selector selector;
+    private volatile boolean isEnd=false;
 
+    public void terminate(){
+        this.isEnd=true;
+    }
 
     public Selector getSelector(){
         return selector;
@@ -67,23 +69,22 @@ public class EventLoop {
      * The eventLoop start loop
      */
     private void startEventLoop() {
-        executorService.submit(new Runnable() {
-            public void run() {
-                try {
-                    selector.select(100);
-                    Set<SelectionKey> keys=selector.selectedKeys();
-                    Iterator<SelectionKey> iterator=keys.iterator();
-                    SelectionKey key=null;
-                    while(iterator.hasNext()){
-                        key=iterator.next();
-                        Channel channel= (Channel) key.attachment();
-                        channel.handle();
-                        iterator.remove();
-                    }
-                    executorService.submit(this);
-                } catch (IOException e) {
-                    e.printStackTrace();
+        executorService.submit(new Event<Object>(Event.Priority.Low) {
+            @Override
+            public Object call() throws Exception {
+                selector.select(100);
+                Set<SelectionKey> keys=selector.selectedKeys();
+                Iterator<SelectionKey> iterator=keys.iterator();
+                SelectionKey key=null;
+                while(iterator.hasNext()){
+                    key=iterator.next();
+                    Channel channel= (Channel) key.attachment();
+                    channel.handle();
+                    iterator.remove();
                 }
+                if(!isEnd)
+                    executorService.submit(this);
+                return null;
             }
         });
     }
@@ -95,4 +96,6 @@ public class EventLoop {
     public <T> Future<T> submit(Callable<T> task){
         return executorService.submit(task);
     }
+
+
 }
