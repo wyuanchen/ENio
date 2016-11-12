@@ -45,6 +45,9 @@ public class ClientBootstraper {
 
     }
 
+    public void shutdown(){
+        eventLoopGroup.shutdown();
+    }
 
     /**
      * add handler

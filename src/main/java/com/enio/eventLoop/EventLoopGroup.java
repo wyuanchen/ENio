@@ -34,4 +34,10 @@ public class EventLoopGroup {
         return loops.get(curIndex);
     }
 
+    public void shutdown(){
+        for(EventLoop eventLoop:loops){
+            eventLoop.shutdown();
+        }
+    }
+
 }

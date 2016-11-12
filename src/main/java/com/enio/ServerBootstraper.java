@@ -54,6 +54,14 @@ public class ServerBootstraper {
     }
 
     /**
+     * Close the server
+     */
+    public void shutdown(){
+        serverLoopGroup.shutdown();
+        clientLoopGroup.shutdown();
+    }
+
+    /**
      * add handler to the server handlers
      * @param handler
      */

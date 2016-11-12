@@ -89,6 +89,17 @@ public class EventLoop {
         });
     }
 
+    public void shutdown(){
+        executorService.submit(new Event<Object>(Event.Priority.Low) {
+            @Override
+            public Object call() throws Exception {
+                selector.close();
+                isEnd=true;
+                executorService.shutdown();
+                return null;
+            }
+        });
+    }
 
     public void submit(Runnable task) {
         executorService.submit(task);
