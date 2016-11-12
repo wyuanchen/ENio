@@ -34,9 +34,9 @@ public abstract class Event<T> implements Callable<T>,Comparable<Event>{
     @Override
     public int compareTo(Event o) {
         if(priority.value()>o.priority.value()){
-            return 1;
-        }else if(priority.value()<o.priority.value()){
             return -1;
+        }else if(priority.value()<o.priority.value()){
+            return 1;
         }else{
             return 0;
         }
