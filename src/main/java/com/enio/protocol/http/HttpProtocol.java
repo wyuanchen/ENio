@@ -4,12 +4,7 @@ package com.enio.protocol.http;
  * Created by yuan on 11/15/16.
  */
 public interface HttpProtocol {
-    enum HttpMethod{
-        HttpGet,
-        HttpPost,
-        HttpPut,
-        HttpDelete
-    };
+
 
     enum HttpVersion{
         HttpVersion_0_0,
@@ -27,5 +22,6 @@ public interface HttpProtocol {
     String HTTP_HEADER_CONNECTION="Connection:";
     String HTTP_SEC_WEBSOCKET_KEY="Sec-WebSocket-Key:";
     String HTTP_SEC_WEBSOCKET_VERSION="Sec-WebSocket-Version:";
+    String HTTP_HEADER_CONTENT_LENGTH="Content-Length";
 
 }

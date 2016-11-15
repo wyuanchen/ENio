@@ -3,7 +3,8 @@ package com.enio.buffer;
 import java.util.Arrays;
 
 /**
- * 用来读写的缓冲区,能够实现自动扩充
+ * The buffer used to read and write, which support auto increasing capacity when
+ * the current capacity isn't enough to save more data
  * Created by yuan on 10/22/16.
  */
 public class EByteBuffer {
@@ -48,6 +49,7 @@ public class EByteBuffer {
     public byte[] getOringinBytes() {
         return bytes;
     }
+
 
 
     public void setBytes(byte[] bytes) {

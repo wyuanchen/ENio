@@ -1,16 +1,13 @@
 package com.enio;
 
 import com.enio.Channel.Channel;
-import com.enio.Channel.ClientChannel;
 import com.enio.Channel.ServerChannel;
 import com.enio.message.Message;
 import com.enio.pipeline.handler.AcceptHandler;
-import com.enio.pipeline.handler.InHandler;
 import com.enio.pipeline.handler.InitialHandler;
-import com.enio.pipeline.handler.impl.SimpleInHandler;
+import com.enio.pipeline.handler.http.HttpRequestDecoder;
 import com.enio.pipeline.handler.impl.SimpleOutHandler;
 
-import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
@@ -23,26 +20,27 @@ public class ServerTest {
         serverBootstraper.addClientHandler(new InitialHandler() {
             @Override
             public void onChannelInitialized(Channel channel, Message message) {
-                channel.pipeline().addLast(new SimpleInHandler());
+                channel.pipeline().addLast(new HttpRequestDecoder());
+//                channel.pipeline().addLast(new SimpleInHandler());
                 channel.pipeline().addLast(new SimpleOutHandler());
-                channel.pipeline().addLast(new InHandler() {
-                    @Override
-                    public boolean handleInputMessage(Channel channel, Message message) {
-                        List<String> strs= (List<String>) message.getData();
-                        for(Channel c:Channel.channels){
-                            if(c!=channel&&c instanceof ClientChannel){
-                                for(String s:strs){
-                                    if(s.equals("shutdown")){
-                                        channel.disconnect();
-                                        return false;
-                                    }
-                                    ((ClientChannel)c).send(s);
-                                }
-                            }
-                        }
-                        return true;
-                    }
-                });
+//                channel.pipeline().addLast(new InHandler() {
+//                    @Override
+//                    public boolean handleInputMessage(Channel channel, Message message) {
+//                        List<String> strs= (List<String>) message.getData();
+//                        for(Channel c:Channel.channels){
+//                            if(c!=channel&&c instanceof ClientChannel){
+//                                for(String s:strs){
+//                                    if(s.equals("shutdown")){
+//                                        channel.disconnect();
+//                                        return false;
+//                                    }
+//                                    ((ClientChannel)c).send(s);
+//                                }
+//                            }
+//                        }
+//                        return true;
+//                    }
+//                });
             }
         });
         serverBootstraper.addHandler(new InitialHandler() {
