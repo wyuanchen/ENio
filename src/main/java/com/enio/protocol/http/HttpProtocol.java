@@ -1,4 +1,4 @@
-package com.enio.protocol;
+package com.enio.protocol.http;
 
 /**
  * Created by yuan on 11/15/16.

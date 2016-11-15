@@ -1,4 +1,4 @@
-package com.enio.protocol;
+package com.enio.protocol.http;
 
 import java.util.HashMap;
 import java.util.Map;
