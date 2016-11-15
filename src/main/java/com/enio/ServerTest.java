@@ -32,6 +32,10 @@ public class ServerTest {
                         for(Channel c:Channel.channels){
                             if(c!=channel&&c instanceof ClientChannel){
                                 for(String s:strs){
+                                    if(s.equals("shutdown")){
+                                        channel.disconnect();
+                                        return false;
+                                    }
                                     ((ClientChannel)c).send(s);
                                 }
                             }
