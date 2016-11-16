@@ -149,4 +149,11 @@ public class Pipeline {
     }
 
 
+    /**
+     * Remove the handler in the pipeline
+     * @param handler the handler need to be removed
+     */
+    public void remove(Handler handler) {
+        handlers.remove(handler);
+    }
 }
