@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * Created by yuan on 11/15/16.
  */
-public class HttpRequest implements HttpProtocol{
+public class HttpRequest extends HttpProtocol{
 
     enum HttpMethod{
         HttpGet("Get"),
@@ -27,7 +27,6 @@ public class HttpRequest implements HttpProtocol{
 
     private Map<String,String> header=new HashMap<String,String>();
     private HttpMethod method;
-    private HttpVersion version;
     private String body;
     private String query;
     private String url;
@@ -50,19 +49,7 @@ public class HttpRequest implements HttpProtocol{
             }
         }
     }
-    public void setVersion(String version) {
-        for(HttpVersion httpVersion:HttpVersion.values()){
-            if(httpVersion.value().equals(version)){
-                this.version=httpVersion;
-                return;
-            }
-        }
-    }
 
-
-    public HttpVersion getVersion(){
-        return this.version;
-    }
     public void addHeader(String key,String value){
         header.put(key,value);
     }

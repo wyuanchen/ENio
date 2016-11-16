@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * Created by yuan on 11/15/16.
  */
-public class HttpResponse implements HttpProtocol{
+public class HttpResponse extends HttpProtocol{
     enum HttpStatusCode{
         // 1xx Informational
         HttpStatusContinue(100),
@@ -48,7 +48,6 @@ public class HttpResponse implements HttpProtocol{
 
 
     private HttpStatusCode statusCode;
-    private HttpVersion version;
     private String serverName;
     private String contentType;
     private boolean closeConnection;
