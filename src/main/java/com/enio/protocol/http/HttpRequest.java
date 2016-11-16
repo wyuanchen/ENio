@@ -8,9 +8,6 @@ import java.util.Map;
  * Created by yuan on 11/15/16.
  */
 public class HttpRequest implements HttpProtocol{
-    public void setVersion(String version) {
-        this.version = version;
-    }
 
     enum HttpMethod{
         HttpGet("Get"),
@@ -27,37 +24,47 @@ public class HttpRequest implements HttpProtocol{
         }
     };
 
-    private Map<String,String> headers=new HashMap<String,String>();
+
+    private Map<String,String> header=new HashMap<String,String>();
     private HttpMethod method;
-    private String version;
+    private HttpVersion version;
     private String body;
     private String query;
     private String url;
 
-    public Map<String, String> getHeaders() {
-        return headers;
+    public Map<String, String> getHeader() {
+        return header;
     }
-
+    public String getHeader(String key){
+        return header.get(key);
+    }
 
     public HttpMethod getMethod(){
         return this.method;
     }
     public void setMethod(String method){
-        if(method.equalsIgnoreCase("GET"))
-            this.method=HttpMethod.HttpGet;
-        else if(method.equalsIgnoreCase("POST"))
-            this.method=HttpMethod.HttpPost;
-        else if(method.equalsIgnoreCase("PUT"))
-            this.method=HttpMethod.HttpPut;
-        else if(method.equalsIgnoreCase("DELETE"))
-            this.method=HttpMethod.HttpDelete;
+        for(HttpMethod httpMethod:HttpMethod.values()){
+            if(httpMethod.value().equals(method)){
+                this.method=httpMethod;
+                return;
+            }
+        }
+    }
+    public void setVersion(String version) {
+        for(HttpVersion httpVersion:HttpVersion.values()){
+            if(httpVersion.value().equals(version)){
+                this.version=httpVersion;
+                return;
+            }
+        }
     }
 
-    public String getVersion(){
+
+    public HttpVersion getVersion(){
         return this.version;
     }
     public void addHeader(String key,String value){
-        headers.put(key,value);
+        header.put(key,value);
     }
 
     public String getBody() {
@@ -89,7 +96,7 @@ public class HttpRequest implements HttpProtocol{
     @Override
     public String toString() {
         StringBuilder str= new StringBuilder(method.value()+" / "+version+"\r\n");
-        Iterator<Map.Entry<String,String>> iterator=headers.entrySet().iterator();
+        Iterator<Map.Entry<String,String>> iterator=header.entrySet().iterator();
         while(iterator.hasNext()){
             Map.Entry<String,String> entry=iterator.next();
             str.append(entry.getKey());
@@ -100,4 +107,6 @@ public class HttpRequest implements HttpProtocol{
         str.append("\r\n");
         return str.toString();
     }
+
+
 }

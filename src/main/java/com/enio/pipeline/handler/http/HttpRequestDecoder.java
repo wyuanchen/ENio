@@ -98,7 +98,7 @@ public class HttpRequestDecoder implements InHandler{
             line=readLine(byteBuffer);
         }
         if(line!=null){
-            String lengthStr=httpRequest.getHeaders().get(HttpProtocol.HTTP_HEADER_CONTENT_LENGTH);
+            String lengthStr=httpRequest.getHeader(HttpProtocol.HTTP_HEADER_CONTENT_LENGTH);
             if(lengthStr!=null){
                 bodyLength=Integer.valueOf(lengthStr);
                 decodeState=DecodeState.BodyDecodng;

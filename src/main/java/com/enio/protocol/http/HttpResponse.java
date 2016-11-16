@@ -117,4 +117,9 @@ public class HttpResponse implements HttpProtocol{
 
     public HttpResponse(){}
 
+    String getHeader(String key){
+        return header.get(key);
+    }
+
+
 }
