@@ -1,6 +1,5 @@
 package com.enio.protocol.http;
 
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
@@ -25,18 +24,11 @@ public class HttpRequest extends HttpProtocol{
     };
 
 
-    private Map<String,String> header=new HashMap<String,String>();
     private HttpMethod method;
-    private String body;
     private String query;
     private String url;
 
-    public Map<String, String> getHeader() {
-        return header;
-    }
-    public String getHeader(String key){
-        return header.get(key);
-    }
+
 
     public HttpMethod getMethod(){
         return this.method;
@@ -50,17 +42,9 @@ public class HttpRequest extends HttpProtocol{
         }
     }
 
-    public void addHeader(String key,String value){
-        header.put(key,value);
-    }
 
-    public String getBody() {
-        return body;
-    }
 
-    public void setBody(String body) {
-        this.body = body;
-    }
+
 
     public String getQuery() {
         return query;

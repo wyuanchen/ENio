@@ -1,6 +1,5 @@
 package com.enio.protocol.http;
 
-import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -51,17 +50,7 @@ public class HttpResponse extends HttpProtocol{
     private String serverName;
     private String contentType;
     private boolean closeConnection;
-    private String body;
-    private Map<String,String> header=new HashMap<String,String>();
 
-
-    public String getBody() {
-        return body;
-    }
-
-    public void setBody(String body) {
-        this.body = body;
-    }
 
     public boolean isCloseConnection() {
         return closeConnection;
@@ -110,15 +99,9 @@ public class HttpResponse extends HttpProtocol{
     public void setVersion(HttpVersion version) {
         this.version = version;
     }
-    public void addHeader(String key,String value){
-        this.header.put(key,value);
-    }
 
     public HttpResponse(){}
 
-    String getHeader(String key){
-        return header.get(key);
-    }
 
 
 }

@@ -1,5 +1,8 @@
 package com.enio.protocol.http;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by yuan on 11/15/16.
  */
@@ -19,7 +22,6 @@ public abstract class HttpProtocol {
             return v;
         }
     };
-    protected HttpVersion version;
 
 
     public static final String CRLF="\r\n";
@@ -35,6 +37,9 @@ public abstract class HttpProtocol {
     public static final String HTTP_HEADER_CONTENT_LENGTH="Content-Length";
     public static final String HTTP_SEC_WEBSOCKET_ACCPET="Sec-WebSocket-Accept:";
 
+    protected HttpVersion version;
+    protected Map<String,String> header=new HashMap<String,String>();
+    protected String body;
 
 
     public void setVersion(String version) {
@@ -51,6 +56,25 @@ public abstract class HttpProtocol {
 
     public HttpVersion getVersion(){
         return this.version;
+    }
+
+    public void addHeader(String key,String value){
+        header.put(key,value);
+    }
+    public Map<String, String> getHeader() {
+        return header;
+    }
+    public String getHeader(String key){
+        return header.get(key);
+    }
+
+
+    public String getBody() {
+        return body;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
     }
 
 }
