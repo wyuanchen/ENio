@@ -15,11 +15,11 @@ public abstract class HttpProtocol {
         HttpVersion_1_1("HTTP/1.1");
 
         HttpVersion(String value){
-            this.v=value;
+            this.value=value;
         }
-        private String v;
-        public String value(){
-            return v;
+        private String value;
+        public String getValue(){
+            return value;
         }
     };
 
@@ -45,7 +45,7 @@ public abstract class HttpProtocol {
 
     public void setVersion(String version) {
         for(HttpVersion httpVersion:HttpVersion.values()){
-            if(httpVersion.value().equals(version)){
+            if(httpVersion.getValue().equals(version)){
                 this.version=httpVersion;
                 return;
             }

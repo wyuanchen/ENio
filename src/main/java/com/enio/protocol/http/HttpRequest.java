@@ -14,12 +14,12 @@ public class HttpRequest extends HttpProtocol{
         HttpPut("Put"),
         HttpDelete("Delete");
 
-        private String v;
+        private String value;
         HttpMethod(String value){
-            this.v=value;
+            this.value=value;
         }
-        private String value(){
-            return v;
+        private String getValue(){
+            return value;
         }
     };
 
@@ -35,7 +35,7 @@ public class HttpRequest extends HttpProtocol{
     }
     public void setMethod(String method){
         for(HttpMethod httpMethod:HttpMethod.values()){
-            if(httpMethod.value().equals(method)){
+            if(httpMethod.getValue().equals(method)){
                 this.method=httpMethod;
                 return;
             }
@@ -66,7 +66,7 @@ public class HttpRequest extends HttpProtocol{
 
     @Override
     public String toString() {
-        StringBuilder str= new StringBuilder(method.value()+" / "+version+"\r\n");
+        StringBuilder str= new StringBuilder(method.getValue()+" / "+version+"\r\n");
         Iterator<Map.Entry<String,String>> iterator=header.entrySet().iterator();
         while(iterator.hasNext()){
             Map.Entry<String,String> entry=iterator.next();
