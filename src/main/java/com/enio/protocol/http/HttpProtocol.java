@@ -36,6 +36,7 @@ public abstract class HttpProtocol {
     public static final String HTTP_SEC_WEBSOCKET_VERSION="Sec-WebSocket-Version:";
     public static final String HTTP_HEADER_CONTENT_LENGTH="Content-Length";
     public static final String HTTP_SEC_WEBSOCKET_ACCPET="Sec-WebSocket-Accept:";
+    public static final String HTTP_SEC_WEBSOCKET_PROTOCOL="Sec-WebSocket-Protocol";
 
     protected HttpVersion version;
     protected Map<String,String> header=new HashMap<String,String>();
