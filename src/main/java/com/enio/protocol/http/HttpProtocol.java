@@ -26,16 +26,17 @@ public abstract class HttpProtocol {
 
     public static final String CRLF="\r\n";
 
-    public static final String HTTP_HEADER_USER_AGENT="User-Agent:";
-    public static final String HTTP_HEADER_ACCPET="Accpet:";
-    public static final String HTTP_HEADER_HOST="Host:";
-    public static final String HTTP_HEADER_ORIGIN="Origin:";
-    public static final String HTTP_HEADER_UPGRADE="Upgrade:";
-    public static final String HTTP_HEADER_CONNECTION="Connection:";
-    public static final String HTTP_SEC_WEBSOCKET_KEY="Sec-WebSocket-Key:";
-    public static final String HTTP_SEC_WEBSOCKET_VERSION="Sec-WebSocket-Version:";
+    public static final String HTTP_SWITING_PROTOCOLS="Switching Protocols";
+    public static final String HTTP_HEADER_USER_AGENT="User-Agent";
+    public static final String HTTP_HEADER_ACCPET="Accpet";
+    public static final String HTTP_HEADER_HOST="Host";
+    public static final String HTTP_HEADER_ORIGIN="Origin";
+    public static final String HTTP_HEADER_UPGRADE="Upgrade";
+    public static final String HTTP_HEADER_CONNECTION="Connection";
+    public static final String HTTP_SEC_WEBSOCKET_KEY="Sec-WebSocket-Key";
+    public static final String HTTP_SEC_WEBSOCKET_VERSION="Sec-WebSocket-Version";
     public static final String HTTP_HEADER_CONTENT_LENGTH="Content-Length";
-    public static final String HTTP_SEC_WEBSOCKET_ACCPET="Sec-WebSocket-Accept:";
+    public static final String HTTP_SEC_WEBSOCKET_ACCPET="Sec-WebSocket-Accept";
     public static final String HTTP_SEC_WEBSOCKET_PROTOCOL="Sec-WebSocket-Protocol";
 
     protected HttpVersion version;

@@ -6,7 +6,7 @@ import java.util.Map;
  * Created by yuan on 11/15/16.
  */
 public class HttpResponse extends HttpProtocol{
-    enum HttpStatusCode{
+    public enum HttpStatusCode{
         // 1xx Informational
         HttpStatusContinue(100),
         HttpStatusSwichingProtocols(101),
@@ -40,7 +40,7 @@ public class HttpResponse extends HttpProtocol{
             this.value=String.valueOf(value);
         }
         private String value;
-        private String getValue(){
+        public String getValue(){
             return value;
         }
     }

@@ -8,7 +8,7 @@ import java.util.Map;
  */
 public class HttpRequest extends HttpProtocol{
 
-    enum HttpMethod{
+    public enum HttpMethod{
         HttpGet("Get"),
         HttpPost("Post"),
         HttpPut("Put"),
