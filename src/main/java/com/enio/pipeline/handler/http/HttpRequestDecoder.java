@@ -65,6 +65,8 @@ public class HttpRequestDecoder implements InHandler{
                 byteBuffer.compact();
                 if (byteBuffer.curLength() > 0)
                     isLoop=true;
+                decodeState=DecodeState.HeaderDecoding;
+                channel.pipeline().remove(this);
             }
         }while(isLoop);
         return flag;

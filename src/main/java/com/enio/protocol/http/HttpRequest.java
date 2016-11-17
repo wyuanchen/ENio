@@ -9,10 +9,10 @@ import java.util.Map;
 public class HttpRequest extends HttpProtocol{
 
     public enum HttpMethod{
-        HttpGet("Get"),
-        HttpPost("Post"),
-        HttpPut("Put"),
-        HttpDelete("Delete");
+        HttpGet("GET"),
+        HttpPost("POST"),
+        HttpPut("PUT"),
+        HttpDelete("DELETE");
 
         private String value;
         HttpMethod(String value){
@@ -35,7 +35,7 @@ public class HttpRequest extends HttpProtocol{
     }
     public void setMethod(String method){
         for(HttpMethod httpMethod:HttpMethod.values()){
-            if(httpMethod.getValue().equals(method)){
+            if(httpMethod.getValue().equalsIgnoreCase(method)){
                 this.method=httpMethod;
                 return;
             }

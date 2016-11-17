@@ -23,13 +23,24 @@ public class WebSocketHandshakeHandler implements InHandler{
         if(secWebSocketAccpetKey==null)
             return false;
         HttpResponse httpResponse=new HttpResponse();
-        httpResponse.addHeader(HttpProtocol.HTTP_SEC_WEBSOCKET_ACCPET,secWebSocketAccpetKey);
         httpResponse.setVersion(HttpProtocol.HttpVersion.HttpVersion_1_1);
-        httpRequest.addHeader(HttpProtocol.HTTP_HEADER_UPGRADE,"websocket");
-        httpRequest.addHeader(HttpProtocol.HTTP_HEADER_CONNECTION,"Upgrade");
-        httpRequest.addHeader(HttpProtocol.HTTP_SEC_WEBSOCKET_PROTOCOL,"chat");
+        httpResponse.setStatusCode(HttpResponse.HttpStatusCode.HttpStatusSwichingProtocols);
+        httpResponse.addHeader(HttpProtocol.HTTP_SEC_WEBSOCKET_ACCPET,secWebSocketAccpetKey);
+        httpResponse.addHeader(HttpProtocol.HTTP_HEADER_UPGRADE,"websocket");
+        httpResponse.addHeader(HttpProtocol.HTTP_HEADER_CONNECTION,"Upgrade");
+        httpResponse.addHeader(HttpProtocol.HTTP_SEC_WEBSOCKET_PROTOCOL,"chat");
+
         ((ClientChannel)channel).send(httpResponse);
         channel.pipeline().remove(this);
+        channel.pipeline().addLast(new InHandler() {
+            @Override
+            public boolean handleInputMessage(Channel channel, Message message) {
+                byte[] bytes= (byte[]) message.getData();
+                String str=new String(bytes);
+                System.out.println(str);
+                return true;
+            }
+        });
         return true;
     }
 

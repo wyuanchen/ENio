@@ -46,7 +46,7 @@ public abstract class HttpProtocol {
 
     public void setVersion(String version) {
         for(HttpVersion httpVersion:HttpVersion.values()){
-            if(httpVersion.getValue().equals(version)){
+            if(httpVersion.getValue().equalsIgnoreCase(version)){
                 this.version=httpVersion;
                 return;
             }
