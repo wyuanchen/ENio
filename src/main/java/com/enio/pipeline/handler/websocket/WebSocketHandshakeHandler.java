@@ -1,6 +1,7 @@
 package com.enio.pipeline.handler.websocket;
 
 import com.enio.Channel.Channel;
+import com.enio.Channel.ClientChannel;
 import com.enio.message.Message;
 import com.enio.pipeline.handler.Handler;
 import com.enio.pipeline.handler.InHandler;
@@ -47,6 +48,11 @@ public class WebSocketHandshakeHandler implements InHandler,OutHandler{
             }
         }
         channel.pipeline().remove(this);
+        channel.pipeline().addLast(new WebSocketProtocolEncoder());
+        channel.pipeline().addLast(new WebSocketProtocolBuilder());
+        ((ClientChannel)channel).send("hello world!");
+        ((ClientChannel)channel).send("hahaha");
+        ((ClientChannel)channel).send("卧槽！");
         return true;
     }
 }

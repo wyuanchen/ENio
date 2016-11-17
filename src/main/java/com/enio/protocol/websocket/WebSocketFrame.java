@@ -6,7 +6,7 @@ package com.enio.protocol.websocket;
 public class WebSocketFrame implements WebSocketProtocol{
     private boolean fin;
     private Opcode opcode;
-    private Object payload;
+    private byte[] payload;
     private boolean transfermasked;
 
     @Override
@@ -25,7 +25,7 @@ public class WebSocketFrame implements WebSocketProtocol{
     }
 
     @Override
-    public boolean getTransferMasked() {
+    public boolean transferMasked() {
         return transfermasked;
     }
 
@@ -40,12 +40,17 @@ public class WebSocketFrame implements WebSocketProtocol{
     }
 
     @Override
-    public void setPayload(Object payload) {
+    public void setPayload(byte[] payload) {
         this.payload=payload;
     }
 
     @Override
-    public Object getPayload() {
+    public byte[] getPayload() {
         return payload;
+    }
+
+    @Override
+    public long getPayloadLength() {
+        return payload==null?0:payload.length;
     }
 }

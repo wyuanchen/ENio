@@ -5,20 +5,30 @@ package com.enio.protocol.websocket;
  */
 public interface WebSocketProtocol {
     enum Opcode{
-        Continuous,
-        Text,
-        Binary,
-        Ping,
-        Pong,
-        Closing
+        Continuous((byte)0x01),
+        Text((byte)0x1),
+        Binary((byte)0x2),
+        Ping((byte)0x9),
+        Pong((byte)0xA),
+        Closing((byte)0x8);
+
+        Opcode(byte value){
+            this.value=value;
+        }
+        private byte value;
+        public byte getValue(){
+            return value;
+        }
     }
+
     void setFin(boolean fin);
     boolean isFin();
     void setTransferMasked(boolean transferMasked);
-    boolean getTransferMasked();
+    boolean transferMasked();
     void setOpcode(Opcode opcode);
     Opcode getOpcode();
-    void setPayload(Object payload);
-    Object getPayload();
+    void setPayload(byte[] payload);
+    byte[] getPayload();
+    long getPayloadLength();
 
 }

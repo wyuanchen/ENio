@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0466fb31-b12f-4c17-85ca-885bd57c9e6a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/enio/protocol/websocket/WebSocketFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/enio/protocol/websocket/WebSocketProtocol.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolBuilder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolDecoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolEncoder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandshakeHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandshakeHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/enio/protocol/websocket/WebSocketFrame.java" afterPath="$PROJECT_DIR$/src/main/java/com/enio/protocol/websocket/WebSocketFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/enio/protocol/websocket/WebSocketProtocol.java" afterPath="$PROJECT_DIR$/src/main/java/com/enio/protocol/websocket/WebSocketProtocol.java" />
     </list>
     <ignored path="enio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +35,8 @@
       <file leaf-file-name="ServerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/ServerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+            <state relative-caret-position="324">
+              <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,35 +47,97 @@
       <file leaf-file-name="WebSocketProtocol.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/protocol/websocket/WebSocketProtocol.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+            <state relative-caret-position="540">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="26" />
+              <folding>
+                <element signature="e#321#322#0" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#421#422#0" expanded="true" />
+                <element signature="e#457#458#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebSocketFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/protocol/websocket/WebSocketFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+              <folding>
+                <element signature="e#1010#1011#0" expanded="true" />
+                <element signature="e#1063#1064#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebSocketProtocolBuilder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebSocketHandshakeHandler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandshakeHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="54" column="45" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#614#623#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebSocketFrame.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/protocol/websocket/WebSocketFrame.java">
+      <file leaf-file-name="WebSocketProtocolEncoder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolEncoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="254">
+              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
               <folding>
-                <element signature="e#303#304#0" expanded="true" />
-                <element signature="e#331#332#0" expanded="true" />
-                <element signature="e#375#376#0" expanded="true" />
-                <element signature="e#401#402#0" expanded="true" />
-                <element signature="e#476#477#0" expanded="true" />
-                <element signature="e#526#527#0" expanded="true" />
-                <element signature="e#582#583#0" expanded="true" />
-                <element signature="e#619#620#0" expanded="true" />
-                <element signature="e#677#678#0" expanded="true" />
-                <element signature="e#711#712#0" expanded="true" />
-                <element signature="e#758#759#0" expanded="true" />
-                <element signature="e#787#788#0" expanded="true" />
-                <element signature="e#847#848#0" expanded="true" />
-                <element signature="e#883#884#0" expanded="true" />
-                <element signature="e#931#932#0" expanded="true" />
-                <element signature="e#961#962#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientChannel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/Channel/ClientChannel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebSocketProtocolDecoder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolDecoder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#345#346#0" expanded="true" />
+                <element signature="e#372#373#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,9 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handlerRegister/HandlerRegister.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handlerRegister/HandlerRegisterListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handlerRegister/SimpleHandlerRegisterListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/ServerSocketBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/initializer/EChannelInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/initializer/SimpleEChannelInitializer.java" />
@@ -140,16 +203,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/enio/protocol/http/HttpRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/protocol/http/HttpProtocol.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/http/HttpRequestDecoder.java" />
-        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/PipelineHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/CloseHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/Channel/Channel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandshakeHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/ServerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/InitialHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/Pipeline.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/protocol/websocket/WebSocketProtocol.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/protocol/websocket/WebSocketFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolDecoder.java" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolEncoder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandshakeHandler.java" />
       </list>
     </option>
   </component>
@@ -204,146 +270,7 @@
       <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protocol" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protocol" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="Scope" />
     </panes>
@@ -351,7 +278,7 @@
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="pip&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/Pipeline.java&#10;ini&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/InitialHandler.java&#10;Ini&#9;PSI&#9;JAVA://com.enio.pipeline.handler.InitialHandler&#10;Channel&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/Channel.java&#10;Server&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/ServerChannel.java&#10;Pipe&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/Pipeline.java&#10;Client&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/ClientChannel.java&#10;channel&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/Channel.java&#10;simpl&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/impl/SimpleInHandler.java&#10;CLien&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/ClientChannel.java&#10;inde&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/index.html&#10;test&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/ServerTest.java&#10;wEB&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandshakeHandler.java&#10;Deco&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/http/HttpRequestDecoder.java&#10;Reque&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/protocol/http/HttpRequest.java&#10;Http&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/http/HttpResponseEncoder.java&#10;Res&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/protocol/http/HttpResponse.java&#10;Respons&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/protocol/http/HttpResponse.java&#10;Respn&#9;FILE&#9;jar:///usr/jdk/jdk1.8.0_71/jre/lib/deploy.jar!/com/sun/deploy/resources/image/progress.png&#10;webso&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandshakeHandler.java&#10;Serve&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/ServerTest.java&#10;Pro&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/protocol/http/HttpProtocol.java&#10;Tes&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Test.java&#10;Eve&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/eventLoop/EventLoop.java&#10;Even&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/eventLoop/EventLoop.java&#10;Clien&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/ClientChannel.java&#10;Event&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/eventLoop/EventLoop.java&#10;Chan&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/Channel.java&#10;Pi&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/Pipeline.java&#10;client&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/ClientSocketBootstraper.java" />
+    <property name="SearchEverywhereHistoryKey" value="inde&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/index.html&#10;En&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolEncoder.java&#10;Serve&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/ServerTest.java&#10;Web&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/protocol/websocket/WebSocketFrame.java&#10;pip&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/Pipeline.java&#10;ini&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/InitialHandler.java&#10;Ini&#9;PSI&#9;JAVA://com.enio.pipeline.handler.InitialHandler&#10;Channel&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/Channel.java&#10;Server&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/ServerChannel.java&#10;Pipe&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/Pipeline.java&#10;Client&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/ClientChannel.java&#10;channel&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/Channel.java&#10;simpl&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/impl/SimpleInHandler.java&#10;CLien&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/ClientChannel.java&#10;test&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/ServerTest.java&#10;wEB&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandshakeHandler.java&#10;Deco&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/http/HttpRequestDecoder.java&#10;Reque&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/protocol/http/HttpRequest.java&#10;Http&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/http/HttpResponseEncoder.java&#10;Res&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/protocol/http/HttpResponse.java&#10;Respons&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/protocol/http/HttpResponse.java&#10;Respn&#9;FILE&#9;jar:///usr/jdk/jdk1.8.0_71/jre/lib/deploy.jar!/com/sun/deploy/resources/image/progress.png&#10;webso&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandshakeHandler.java&#10;Pro&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/protocol/http/HttpProtocol.java&#10;Tes&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Test.java&#10;Eve&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/eventLoop/EventLoop.java&#10;Even&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/eventLoop/EventLoop.java&#10;Clien&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/ClientChannel.java&#10;Event&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/eventLoop/EventLoop.java&#10;Chan&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/Channel.java&#10;Pi&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/Pipeline.java&#10;client&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/ClientSocketBootstraper.java" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
@@ -912,7 +839,7 @@
       <workItem from="1479105894296" duration="3586000" />
       <workItem from="1479137408482" duration="19168000" />
       <workItem from="1479303637909" duration="18036000" />
-      <workItem from="1479366800004" duration="904000" />
+      <workItem from="1479366800004" duration="11373000" />
     </task>
     <task id="LOCAL-00001" summary="修改Handler分类，将InHandler,OutHandler,InitialHandler分离开来，并且使用CopyOnWriteArrayList来作为pipeline的handlers列表">
       <created>1478236407301</created>
@@ -1075,11 +1002,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479352411887</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="实现Websocket 协议">
+      <created>1479367733281</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1479367733281</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129271000" />
+    <option name="totallyTimeSpent" value="139740000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1096,29 +1030,29 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="0" y="68" width="1920" height="1012" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32711306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23710209" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32077503" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32077503" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43578485" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43592814" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="0" y="68" width="1920" height="1012" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1185,19 +1119,20 @@
     <MESSAGE value="修改Pipeline,使Pipeline实现PipelineHandler接口" />
     <MESSAGE value="修改InitialHandler接口的方法" />
     <MESSAGE value="封装WebSocketHandler" />
-    <option name="LAST_COMMIT_MESSAGE" value="封装WebSocketHandler" />
+    <MESSAGE value="实现Websocket 协议" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现Websocket 协议" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/enio/Channel/ClientChannel.java</url>
-          <line>31</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolEncoder.java</url>
+          <line>20</line>
           <properties />
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="20" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1206,27 +1141,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/jdk/jdk1.8.0_71/src.zip!/java/util/concurrent/ScheduledThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6912">
-          <caret line="428" column="11" selection-start-line="428" selection-start-column="11" selection-end-line="428" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/jdk/jdk1.8.0_71/jre/lib/rt.jar!/sun/misc/Unsafe.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="358" column="21" selection-start-line="358" selection-start-column="21" selection-end-line="358" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/jdk/jdk1.8.0_71/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="130" column="7" selection-start-line="130" selection-start-column="7" selection-end-line="130" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/jdk/jdk1.8.0_71/src.zip!/java/util/concurrent/Executors.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -1255,6 +1169,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1304,6 +1219,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#681#682#0" expanded="false" />
+            <element signature="e#712#713#0" expanded="false" />
+            <element signature="e#748#749#0" expanded="false" />
+            <element signature="e#779#780#0" expanded="false" />
+            <element signature="e#3763#3764#0" expanded="false" />
+            <element signature="e#3815#3816#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1311,6 +1235,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding>
+            <element signature="e#464#465#0" expanded="false" />
+            <element signature="e#504#505#0" expanded="false" />
+            <element signature="e#532#533#0" expanded="false" />
+            <element signature="e#568#569#0" expanded="false" />
+            <element signature="e#626#627#0" expanded="false" />
+            <element signature="e#663#664#0" expanded="false" />
+            <element signature="e#701#702#0" expanded="false" />
+            <element signature="e#739#740#0" expanded="false" />
+            <element signature="e#1041#1042#0" expanded="false" />
+            <element signature="e#1079#1080#0" expanded="false" />
+            <element signature="e#1114#1115#0" expanded="false" />
+            <element signature="e#1150#1151#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1318,6 +1256,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="425" column="37" selection-start-line="425" selection-start-column="37" selection-end-line="425" selection-end-column="37" />
+          <folding>
+            <element signature="e#4677#4678#0" expanded="false" />
+            <element signature="e#4714#4715#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1325,6 +1267,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-187">
           <caret line="150" column="26" selection-start-line="150" selection-start-column="26" selection-end-line="150" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1332,13 +1275,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/buffer/EByteBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#418#419#0" expanded="false" />
+            <element signature="e#508#509#0" expanded="false" />
+            <element signature="e#536#537#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1346,6 +1288,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1353,6 +1296,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1360,6 +1304,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
           <caret line="127" column="16" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1367,6 +1312,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1374,6 +1320,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="14" column="73" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1386,6 +1333,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1404,18 +1352,18 @@
         <state relative-caret-position="416">
           <caret line="48" column="55" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#335#336#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#1469#1484#0" expanded="true" />
-            <element signature="e#1830#1831#0" expanded="true" />
-            <element signature="e#1866#1867#0" expanded="true" />
-            <element signature="e#2144#2145#0" expanded="true" />
-            <element signature="e#2182#2183#0" expanded="true" />
-            <element signature="e#2214#2215#0" expanded="true" />
-            <element signature="e#2241#2242#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#335#336#0" expanded="false" />
+            <element signature="e#375#376#0" expanded="false" />
+            <element signature="e#439#440#0" expanded="false" />
+            <element signature="e#475#476#0" expanded="false" />
+            <element signature="e#1469#1484#0" expanded="false" />
+            <element signature="e#1830#1831#0" expanded="false" />
+            <element signature="e#1866#1867#0" expanded="false" />
+            <element signature="e#2144#2145#0" expanded="false" />
+            <element signature="e#2182#2183#0" expanded="false" />
+            <element signature="e#2214#2215#0" expanded="false" />
+            <element signature="e#2241#2242#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1427,17 +1375,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/message/Message.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1445,6 +1390,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1452,6 +1398,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="11" column="35" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="35" />
+          <folding>
+            <element signature="e#2304#2305#0" expanded="false" />
+            <element signature="e#2334#2335#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1459,6 +1409,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1466,6 +1417,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="632">
           <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1473,6 +1425,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1480,14 +1433,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/Channel/ClientChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="109" column="32" selection-start-line="109" selection-start-column="32" selection-end-line="109" selection-end-column="32" />
-          <folding />
+          <folding>
+            <element signature="e#2953#2954#0" expanded="true" />
+            <element signature="e#3018#3019#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1495,6 +1444,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="14" column="72" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1502,20 +1452,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandshakeResponser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandshakeHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1010">
-          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1523,6 +1460,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
           <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1530,6 +1470,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-24">
           <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1537,13 +1480,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1944">
           <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandshakeResponser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/ServerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        <state relative-caret-position="324">
+          <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1552,33 +1504,91 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/protocol/websocket/WebSocketProtocol.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="540">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/protocol/websocket/WebSocketFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="378">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
           <folding>
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#331#332#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
-            <element signature="e#787#788#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#883#884#0" expanded="true" />
-            <element signature="e#931#932#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1063#1064#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/Channel/ClientChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/buffer/EByteBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="137" column="18" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandshakeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="54" column="45" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#614#623#0" expanded="true" />
           </folding>
         </state>
       </provider>
