@@ -94,7 +94,7 @@ public abstract class Channel {
      * The handle Channel initialization after the channel is bound to a eventLoop
      */
     private void handleInitial() {
-        pipeLine.handleChannelInitial(this,new Message());
+        pipeLine.onChannelInitialized(this,new Message());
     }
 
     public void handle() throws IOException {

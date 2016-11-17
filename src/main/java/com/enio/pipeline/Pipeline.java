@@ -10,7 +10,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 /**
  * Created by yuan on 10/18/16.
  */
-public class Pipeline {
+public class Pipeline implements PipelineHandler{
 //    protected List<Handler> handlers= Collections.synchronizedList(new LinkedList<Handler>());
     protected List<Handler> handlers=new CopyOnWriteArrayList<Handler>();
 
@@ -65,7 +65,8 @@ public class Pipeline {
      * @param message
      * @return
      */
-    public boolean handleChannelInitial(Channel channel,Message message){
+    @Override
+    public boolean onChannelInitialized(Channel channel,Message message){
         boolean isContinue=false;
         int len=handlers.size();
         for(Handler handler:handlers){
@@ -83,7 +84,8 @@ public class Pipeline {
      * @param channel The Channel which has the pipeline
      * @param message The message come from previous handler in the pipeline
      */
-    public boolean handleAcceptableMessage(Channel channel,Message message) {
+    @Override
+    public boolean handlerAccept(Channel channel,Message message) {
         boolean isContinue=false;
         for(Handler handler:handlers){
             if(handler instanceof AcceptHandler){
@@ -98,11 +100,12 @@ public class Pipeline {
     /**
      * The method is invoked when the channel is going to close
      */
+    @Override
     public boolean handleChannelClose(Channel channel,Message message) {
         boolean isContinue=false;
         for(Handler handler:handlers){
             if(handler instanceof CloseHandler){
-                isContinue=((CloseHandler)handler).handleCloseEvent(channel,message);
+                isContinue=((CloseHandler)handler).handleChannelClose(channel,message);
                 if(!isContinue)
                     return false;
             }
@@ -156,4 +159,7 @@ public class Pipeline {
     public void remove(Handler handler) {
         handlers.remove(handler);
     }
+
+
+
 }

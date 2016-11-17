@@ -7,5 +7,5 @@ import com.enio.message.Message;
  * Created by yuan on 11/4/16.
  */
 public interface InitialHandler extends Handler{
-    void onChannelInitialized(Channel channel, Message message);
+    boolean onChannelInitialized(Channel channel, Message message);
 }

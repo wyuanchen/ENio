@@ -41,7 +41,7 @@ public class ServerChannel extends Channel {
             ClientChannel clientChannel=new ClientChannel(socketChannel,SelectionKey.OP_READ,clientHandlers);
             Future<Channel> channelFuture=clientChannel.bindEventLoop(eventLoop);
             Message message=new Message(channelFuture);
-            pipeLine.handleAcceptableMessage(this,message);
+            pipeLine.handlerAccept(this,message);
         } catch (Exception e) {
             e.printStackTrace();
         }
