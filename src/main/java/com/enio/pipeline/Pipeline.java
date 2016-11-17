@@ -66,7 +66,7 @@ public class Pipeline implements PipelineHandler{
      * @return
      */
     @Override
-    public boolean onChannelInitialized(Channel channel,Message message){
+    public void onChannelInitialized(Channel channel,Message message){
         boolean isContinue=false;
         int len=handlers.size();
         for(Handler handler:handlers){
@@ -75,7 +75,6 @@ public class Pipeline implements PipelineHandler{
                 handlers.remove(handler);
             }
         }
-        return true;
 
     }
 
