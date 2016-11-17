@@ -5,8 +5,6 @@ import com.enio.Channel.ServerChannel;
 import com.enio.message.Message;
 import com.enio.pipeline.handler.AcceptHandler;
 import com.enio.pipeline.handler.InitialHandler;
-import com.enio.pipeline.handler.http.HttpRequestDecoder;
-import com.enio.pipeline.handler.http.HttpResponseEncoder;
 import com.enio.pipeline.handler.websocket.WebSocketHandshakeHandler;
 
 import java.util.concurrent.ExecutionException;
@@ -21,9 +19,9 @@ public class ServerTest {
         serverBootstraper.addClientHandler(new InitialHandler() {
             @Override
             public void onChannelInitialized(Channel channel, Message message) {
-                channel.pipeline().addLast(new HttpRequestDecoder());
+//                channel.pipeline().addLast(new HttpRequestDecoder());
                 channel.pipeline().addLast(new WebSocketHandshakeHandler());
-                channel.pipeline().addLast(new HttpResponseEncoder());
+//                channel.pipeline().addLast(new HttpResponseEncoder());
 //                channel.pipeline().addLast(new SimpleInHandler());
 //                channel.pipeline().addLast(new SimpleOutHandler());
 //                channel.pipeline().addLast(new InHandler() {
