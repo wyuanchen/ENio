@@ -11,8 +11,6 @@ import java.io.IOException;
 import java.nio.channels.SelectableChannel;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
-import java.util.Collections;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.Future;
 
@@ -20,7 +18,7 @@ import java.util.concurrent.Future;
  * Created by yuan on 10/8/16.
  */
 public abstract class Channel {
-    public static final List<Channel> channels= Collections.synchronizedList(new LinkedList<Channel>());
+//    public static final List<Channel> channels= Collections.synchronizedList(new LinkedList<Channel>());
 
     protected SelectionKey key;
     protected SelectableChannel channel;
@@ -69,7 +67,7 @@ public abstract class Channel {
                 key.attach(Channel.this);
                 Channel.this.key=key;
 //                Channel.this.channel=key.channel();
-                Channel.channels.add(Channel.this);
+//                Channel.channels.add(Channel.this);
                 Channel.this.handleInitial();
                 return Channel.this;
             }

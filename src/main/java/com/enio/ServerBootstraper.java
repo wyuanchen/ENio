@@ -22,7 +22,7 @@ public class ServerBootstraper {
     private EventLoopGroup serverLoopGroup;
     private ServerSocketChannel serverSocketChannel;
 
-    private List<Channel> clientChannels= Channel.channels;
+//    private List<Channel> clientChannels= Channel.channels;
 
     private List<Handler> serverHandlers=new LinkedList<Handler>();
     private List<Handler> clientHandlers=new LinkedList<Handler>();

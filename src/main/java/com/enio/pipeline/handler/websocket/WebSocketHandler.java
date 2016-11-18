@@ -33,7 +33,7 @@ public class WebSocketHandler implements InHandler,OutHandler{
                     return false;
             }
         }
-        return true;
+        return false;
     }
 
     @Override
@@ -47,10 +47,13 @@ public class WebSocketHandler implements InHandler,OutHandler{
             }
         }
         channel.pipeline().remove(this);
-        channel.pipeline().addLast(new WebSocketProtocolEncoder());
-        channel.pipeline().addLast(new WebSocketProtocolBuilder());
-        channel.pipeline().addLast(new WebSocketProtocolDecoder());
-        channel.pipeline().addLast(new WebSocketProtocolReceiver());
+        List<Handler> newHandles=new LinkedList<Handler>();
+        newHandles.add(new WebSocketProtocolEncoder());
+        newHandles.add(new WebSocketProtocolBuilder());
+        newHandles.add(new WebSocketProtocolDecoder());
+        newHandles.add(new WebSocketProtocolReceiver());
+        channel.pipeline().addFirst(newHandles);
+
 
         return true;
     }
