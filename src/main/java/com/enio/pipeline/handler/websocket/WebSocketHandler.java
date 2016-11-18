@@ -14,10 +14,10 @@ import java.util.List;
 /**
  * Created by yuan on 11/17/16.
  */
-public class WebSocketHandshakeHandler implements InHandler,OutHandler{
+public class WebSocketHandler implements InHandler,OutHandler{
     private List<Handler> handlers=new LinkedList<Handler>();
 
-    public WebSocketHandshakeHandler(){
+    public WebSocketHandler(){
         handlers.add(new HttpRequestDecoder());
         handlers.add(new WebSocketHandshakeResponser());
         handlers.add(new HttpResponseEncoder());
@@ -50,8 +50,8 @@ public class WebSocketHandshakeHandler implements InHandler,OutHandler{
         channel.pipeline().addLast(new WebSocketProtocolEncoder());
         channel.pipeline().addLast(new WebSocketProtocolBuilder());
         channel.pipeline().addLast(new WebSocketProtocolDecoder());
-        channel.pipeline().addLast(new WebSocketProtocolHandler());
-        
+        channel.pipeline().addLast(new WebSocketProtocolReceiver());
+
         return true;
     }
 }

@@ -5,7 +5,7 @@ import com.enio.Channel.ServerChannel;
 import com.enio.message.Message;
 import com.enio.pipeline.handler.AcceptHandler;
 import com.enio.pipeline.handler.InitialHandler;
-import com.enio.pipeline.handler.websocket.WebSocketHandshakeHandler;
+import com.enio.pipeline.handler.websocket.WebSocketHandler;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
@@ -20,7 +20,7 @@ public class ServerTest {
             @Override
             public void onChannelInitialized(Channel channel, Message message) {
 //                channel.pipeline().addLast(new HttpRequestDecoder());
-                channel.pipeline().addLast(new WebSocketHandshakeHandler());
+                channel.pipeline().addLast(new WebSocketHandler());
 //                channel.pipeline().addLast(new HttpResponseEncoder());
 //                channel.pipeline().addLast(new SimpleInHandler());
 //                channel.pipeline().addLast(new SimpleOutHandler());
@@ -61,6 +61,6 @@ public class ServerTest {
 //        enioServer.addClientHandler(new SimpleOutHandler());
         Future<Channel> future=serverBootstraper.connect();
         ServerChannel channel=(ServerChannel)future.get();
-        channel.handleAcceptable();
+//        channel.handleAcceptable();
     }
 }
