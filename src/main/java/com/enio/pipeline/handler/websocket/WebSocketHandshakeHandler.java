@@ -50,6 +50,8 @@ public class WebSocketHandshakeHandler implements InHandler,OutHandler{
         channel.pipeline().remove(this);
         channel.pipeline().addLast(new WebSocketProtocolEncoder());
         channel.pipeline().addLast(new WebSocketProtocolBuilder());
+        channel.pipeline().addLast(new WebSocketProtocolDecoder());
+        channel.pipeline().addLast(new WebSocketProtocolHandler());
         ((ClientChannel)channel).send("hello world!");
         ((ClientChannel)channel).send("hahaha");
         ((ClientChannel)channel).send("卧槽！");
