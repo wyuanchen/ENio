@@ -84,7 +84,8 @@ public class EByteBuffer {
 
 
     /**
-     * 保证有剩余的空间,如果没有剩余的空间则
+     * Making sure that the space of buffer is enough to hold the byte array which is going
+     * to be added
      * @param length
      */
     private void ensureSpace(int length) {
@@ -149,5 +150,21 @@ public class EByteBuffer {
 
     public byte read() {
         return bytes[head++];
+    }
+
+    /**
+     * Read the bytes to the targetBytes and the maximun number of byte read will be less
+     * than or equal to the length of target byte array.
+     * @param targetBytes The target byte array
+     * @return The number of byte which has been read
+     */
+    public int read(byte[] targetBytes){
+        if(targetBytes==null)
+            throw new NullPointerException();
+        int maxReadableNum=curLength()<targetBytes.length?curLength():targetBytes.length;
+        for(int i=0;i<maxReadableNum;i++){
+            targetBytes[i]=read();
+        }
+        return maxReadableNum;
     }
 }

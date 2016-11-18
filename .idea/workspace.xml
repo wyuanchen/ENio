@@ -7,8 +7,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/enio/buffer/EByteBuffer.java" afterPath="$PROJECT_DIR$/src/main/java/com/enio/buffer/EByteBuffer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandshakeHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandshakeHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolDecoder.java" afterPath="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolDecoder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/enio/protocol/websocket/WebSocketFrame.java" afterPath="$PROJECT_DIR$/src/main/java/com/enio/protocol/websocket/WebSocketFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/enio/protocol/websocket/WebSocketProtocol.java" afterPath="$PROJECT_DIR$/src/main/java/com/enio/protocol/websocket/WebSocketProtocol.java" />
     </list>
     <ignored path="enio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -797,7 +795,7 @@
       <workItem from="1479137408482" duration="19168000" />
       <workItem from="1479303637909" duration="18036000" />
       <workItem from="1479366800004" duration="11524000" />
-      <workItem from="1479435824550" duration="15427000" />
+      <workItem from="1479435824550" duration="15464000" />
     </task>
     <task id="LOCAL-00001" summary="修改Handler分类，将InHandler,OutHandler,InitialHandler分离开来，并且使用CopyOnWriteArrayList来作为pipeline的handlers列表">
       <created>1478236407301</created>
@@ -974,11 +972,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479380731132</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="修改WebSocketProtocol协议和相关实现">
+      <created>1479454846316</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1479454846316</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155318000" />
+    <option name="totallyTimeSpent" value="155355000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1086,7 +1091,8 @@
     <MESSAGE value="封装WebSocketHandler" />
     <MESSAGE value="实现Websocket 协议" />
     <MESSAGE value="实现WebSocket编码和WebSocketProtocol创建" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现WebSocket编码和WebSocketProtocol创建" />
+    <MESSAGE value="修改WebSocketProtocol协议和相关实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改WebSocketProtocol协议和相关实现" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
