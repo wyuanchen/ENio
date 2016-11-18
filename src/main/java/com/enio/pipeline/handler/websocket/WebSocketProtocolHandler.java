@@ -1,6 +1,7 @@
 package com.enio.pipeline.handler.websocket;
 
 import com.enio.Channel.Channel;
+import com.enio.Channel.ClientChannel;
 import com.enio.message.Message;
 import com.enio.pipeline.handler.InHandler;
 import com.enio.protocol.websocket.WebSocketProtocol;
@@ -17,10 +18,23 @@ public class WebSocketProtocolHandler implements InHandler{
     public boolean handleInputMessage(Channel channel, Message message) {
         List<WebSocketProtocol> webSocketProtocols= (List<WebSocketProtocol>) message.getData();
         for(WebSocketProtocol webSocketProtocol:webSocketProtocols){
-            String str=extractString(webSocketProtocol);
-            System.out.println(str);
+            handle(channel,webSocketProtocol);
         }
         return true;
+    }
+
+    private void handle(Channel channel,WebSocketProtocol webSocketProtocol) {
+        switch (webSocketProtocol.getOpcode()){
+            case Text:
+                String str=extractString(webSocketProtocol);
+                System.out.println(str);
+                ((ClientChannel)channel).send(str);
+                break;
+            case Closing:
+                System.out.println("The Websocket channel is closing!");
+                channel.disconnect();
+                break;
+        }
     }
 
     private String extractString(WebSocketProtocol webSocketProtocol) {
