@@ -27,8 +27,13 @@ public class WebSocketProtocolHandler implements InHandler{
         switch (webSocketProtocol.getOpcode()){
             case Text:
                 String str=extractString(webSocketProtocol);
-                System.out.println(str);
-                ((ClientChannel)channel).send(str);
+//                System.out.println(str);
+                for(Channel c:Channel.channels){
+                    if(c instanceof ClientChannel){
+                        ((ClientChannel)c).send(str);
+                    }
+                }
+//                ((ClientChannel)channel).send(str);
                 break;
             case Closing:
                 System.out.println("The Websocket channel is closing!");

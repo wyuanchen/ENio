@@ -28,7 +28,7 @@ public class WebSocketHandshakeResponser implements InHandler{
         httpResponse.addHeader(HttpProtocol.HTTP_SEC_WEBSOCKET_ACCPET,secWebSocketAccpetKey);
         httpResponse.addHeader(HttpProtocol.HTTP_HEADER_UPGRADE,"websocket");
         httpResponse.addHeader(HttpProtocol.HTTP_HEADER_CONNECTION,"Upgrade");
-        httpResponse.addHeader(HttpProtocol.HTTP_SEC_WEBSOCKET_PROTOCOL,"chat");
+//        httpResponse.addHeader(HttpProtocol.HTTP_SEC_WEBSOCKET_PROTOCOL,"chat");
 
         ((ClientChannel)channel).send(httpResponse);
         channel.pipeline().remove(this);
