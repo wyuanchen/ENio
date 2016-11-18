@@ -35,6 +35,17 @@ public class WebSocketFrame implements WebSocketProtocol{
     }
 
     @Override
+    public void setOpcode(byte opcodeValue) {
+        for(Opcode opcode:Opcode.values()){
+            if(opcode.getValue()==opcodeValue){
+                this.opcode=opcode;
+                return;
+            }
+        }
+        this.opcode=Opcode.Other;
+    }
+
+    @Override
     public Opcode getOpcode() {
         return opcode;
     }
