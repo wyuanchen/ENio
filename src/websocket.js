@@ -8,7 +8,7 @@ var index=0;
 var host=window.location.host;
 //判断当前浏览器是否支持WebSocket
 if('WebSocket' in window){
-    websocket=new WebSocket("ws://"+"127.0.0.1"+":12345");
+    websocket=new WebSocket("ws://"+"114.215.97.158"+":12345");
 }
 else{
     alert("Not Support WebSocket!");
