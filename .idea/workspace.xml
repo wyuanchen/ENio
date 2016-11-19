@@ -7,12 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0466fb31-b12f-4c17-85ca-885bd57c9e6a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/enio/util/UnsignedByteHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danmu.html" afterPath="$PROJECT_DIR$/src/danmu.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/enio/demo/DanmuDemo.java" afterPath="$PROJECT_DIR$/src/main/java/com/enio/demo/DanmuDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolDecoder.java" afterPath="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolDecoder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/websocket.js" afterPath="$PROJECT_DIR$/src/websocket.js" />
     </list>
     <ignored path="enio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,8 +47,8 @@
       <file leaf-file-name="WebSocketHandler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
+            <state relative-caret-position="65">
+              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -846,7 +842,7 @@
       <workItem from="1479366800004" duration="11524000" />
       <workItem from="1479435824550" duration="27548000" />
       <workItem from="1479535651593" duration="3354000" />
-      <workItem from="1479543812455" duration="2397000" />
+      <workItem from="1479543812455" duration="2475000" />
     </task>
     <task id="LOCAL-00001" summary="修改Handler分类，将InHandler,OutHandler,InitialHandler分离开来，并且使用CopyOnWriteArrayList来作为pipeline的handlers列表">
       <created>1478236407301</created>
@@ -1079,11 +1075,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479475702521</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="修改字节位运算和创建UnsignedByteHelper提供unsigned操作">
+      <created>1479546286423</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1479546286423</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173190000" />
+    <option name="totallyTimeSpent" value="173268000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1167,7 +1170,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
-    <MESSAGE value="修改Event优先级比较方式" />
     <MESSAGE value="初步增加Http协议" />
     <MESSAGE value="改变包结构" />
     <MESSAGE value="实现HttpRequest解码" />
@@ -1192,7 +1194,8 @@
     <MESSAGE value="调整WebSocketProtocolReceiver，使其返回String列表,并且对Websocket相关Handler进行重命名" />
     <MESSAGE value="实现弹幕Demo" />
     <MESSAGE value="微调" />
-    <option name="LAST_COMMIT_MESSAGE" value="微调" />
+    <MESSAGE value="修改字节位运算和创建UnsignedByteHelper提供unsigned操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改字节位运算和创建UnsignedByteHelper提供unsigned操作" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1697,8 +1700,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
+        <state relative-caret-position="65">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding />
         </state>
       </provider>

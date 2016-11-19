@@ -15,6 +15,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
  * Created by yuan on 11/18/16.
@@ -22,6 +23,7 @@ import java.util.concurrent.Future;
 public class DanmuDemo {
 
     private static List<ClientChannel> clientChannels= Collections.synchronizedList(new LinkedList<ClientChannel>());
+    private static final ReentrantReadWriteLock lock=new ReentrantReadWriteLock();
 
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
@@ -35,9 +37,18 @@ public class DanmuDemo {
                     public boolean handleInputMessage(Channel channel, Message message) {
                         List<String> strs= (List<String>) message.getData();
                         for(String str:strs){
-                            for(ClientChannel clientChannel:clientChannels){
-                                clientChannel.send(str);
+                            try{
+                                lock.readLock().lock();
+                                for(ClientChannel clientChannel:clientChannels){
+                                    clientChannel.send(str);
+                                }
+                            }catch (Exception e){
+                                e.printStackTrace();
+                            } finally {
+                                lock.readLock().unlock();
                             }
+
+
                         }
                         return true;
                     }
@@ -45,15 +56,32 @@ public class DanmuDemo {
                 channel.pipeline().addLast(new CloseHandler() {
                     @Override
                     public boolean handleChannelClose(Channel channel, Message message) {
-                        clientChannels.remove(channel);
-                        return true;
+                        try{
+                            lock.writeLock().lock();
+                            clientChannels.remove(channel);
+                        }catch (Exception e){
+                            e.printStackTrace();
+                        }finally {
+                            lock.writeLock().unlock();
+                            return true;
+                        }
+
                     }
                 });
-                clientChannels.add((ClientChannel) channel);
+
+                try{
+                    lock.writeLock().lock();
+                    clientChannels.add((ClientChannel) channel);
+                }catch(Exception e){
+                    e.printStackTrace();
+                }finally {
+                    lock.writeLock().unlock();
+                }
             }
         });
 
         Future<Channel> future=serverBootstraper.connect();
         ServerChannel serverChannel= (ServerChannel) future.get();
+
     }
 }
