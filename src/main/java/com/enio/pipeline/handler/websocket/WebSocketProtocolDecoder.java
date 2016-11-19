@@ -6,6 +6,7 @@ import com.enio.message.Message;
 import com.enio.pipeline.handler.InHandler;
 import com.enio.protocol.websocket.WebSocketFrame;
 import com.enio.protocol.websocket.WebSocketProtocol;
+import com.enio.util.UnsignedByteHelper;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -150,7 +151,7 @@ public class WebSocketProtocolDecoder implements InHandler{
                     return false;
                 for(int i=1;i>=0;i--){
                     b=byteBuffer.read();
-                    payloadLength|=b;
+                    payloadLength|= UnsignedByteHelper.getUnsignedByte(b);
                     payloadLength=payloadLength<<8;
                 }
                 payloadLength>>=8;
@@ -161,7 +162,7 @@ public class WebSocketProtocolDecoder implements InHandler{
                     return false;
                 for(int i=3;i>=0;i--){
                     b=byteBuffer.read();
-                    payloadLength|=b;
+                    payloadLength|=UnsignedByteHelper.getUnsignedByte(b);
                     payloadLength=payloadLength<<8;
                 }
                 payloadLength>>=8;
