@@ -63,9 +63,6 @@ public class PriorityScheduledThreadPoolExecutor extends ScheduledThreadPoolExec
             sequenceNumber=sequencer.getAndIncrement();
         }
 
-
-
-
         public long getDelay(TimeUnit unit) {
             return unit.convert(time - now(), NANOSECONDS);
         }

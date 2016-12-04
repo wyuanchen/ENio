@@ -7,13 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0466fb31-b12f-4c17-85ca-885bd57c9e6a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/PriorityScheduledThreadPoolExecutor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/event/EventPriority.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/event/ScheduledEvent.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/PriorityThreadPoolExecutor.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/EventLoop.java" afterPath="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/EventLoop.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/event/Event.java" afterPath="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/event/Event.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/PriorityScheduledThreadPoolExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/PriorityScheduledThreadPoolExecutor.java" />
     </list>
     <ignored path="enio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="EventLoop.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EventLoop.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/eventLoop/EventLoop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="95" column="39" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="39" />
+            <state relative-caret-position="189">
+              <caret line="105" column="28" selection-start-line="105" selection-start-column="28" selection-end-line="105" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -67,21 +62,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PriorityScheduledThreadPoolExecutor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PriorityScheduledThreadPoolExecutor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/eventLoop/PriorityScheduledThreadPoolExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1468">
-              <caret line="225" column="0" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
+            <state relative-caret-position="-243">
+              <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3822#3823#0" expanded="true" />
-                <element signature="e#3864#3865#0" expanded="true" />
-                <element signature="e#5013#5014#0" expanded="true" />
-                <element signature="e#5053#5054#0" expanded="true" />
-                <element signature="e#5500#5501#0" expanded="true" />
-                <element signature="e#5535#5536#0" expanded="true" />
-                <element signature="e#6293#6294#0" expanded="true" />
-                <element signature="e#6366#6367#0" expanded="true" />
+                <element signature="e#3819#3820#0" expanded="true" />
+                <element signature="e#3861#3862#0" expanded="true" />
+                <element signature="e#5010#5011#0" expanded="true" />
+                <element signature="e#5050#5051#0" expanded="true" />
+                <element signature="e#5497#5498#0" expanded="true" />
+                <element signature="e#5532#5533#0" expanded="true" />
+                <element signature="e#6290#6291#0" expanded="true" />
+                <element signature="e#6363#6364#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,10 +162,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/event/ScheduledEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/PP.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/PriorityThreadPoolExecutor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/PriorityScheduledThreadPoolExecutor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/Channel/ClientChannel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/event/Event.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/EventLoop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/PriorityScheduledThreadPoolExecutor.java" />
       </list>
     </option>
   </component>
@@ -1154,7 +1149,7 @@
       <workItem from="1479543812455" duration="2836000" />
       <workItem from="1480312855452" duration="32604000" />
       <workItem from="1480506730177" duration="9548000" />
-      <workItem from="1480820014141" duration="19545000" />
+      <workItem from="1480820014141" duration="19786000" />
     </task>
     <task id="LOCAL-00001" summary="修改Handler分类，将InHandler,OutHandler,InitialHandler分离开来，并且使用CopyOnWriteArrayList来作为pipeline的handlers列表">
       <created>1478236407301</created>
@@ -1401,11 +1396,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479546304171</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="自定义ScheduledThreadPoolExecutor,实现周期和任务优先级的比较和调度,并且修改Event类结构">
+      <created>1480853510864</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1480853510864</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="235326000" />
+    <option name="totallyTimeSpent" value="235567000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1418,7 +1420,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-8" width="1920" height="1088" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1433,7 +1435,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.233809" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28471476" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28471476" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1489,7 +1491,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
-    <MESSAGE value="初步增加Http协议" />
     <MESSAGE value="改变包结构" />
     <MESSAGE value="实现HttpRequest解码" />
     <MESSAGE value="修改HttpProtocl关于HttpMethod和HttpVersion枚举量的赋值" />
@@ -1514,7 +1515,8 @@
     <MESSAGE value="实现弹幕Demo" />
     <MESSAGE value="修改字节位运算和创建UnsignedByteHelper提供unsigned操作" />
     <MESSAGE value="微调" />
-    <option name="LAST_COMMIT_MESSAGE" value="微调" />
+    <MESSAGE value="自定义ScheduledThreadPoolExecutor,实现周期和任务优先级的比较和调度,并且修改Event类结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="自定义ScheduledThreadPoolExecutor,实现周期和任务优先级的比较和调度,并且修改Event类结构" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1892,21 +1894,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/eventLoop/PriorityScheduledThreadPoolExecutor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/Channel/ClientChannel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1468">
-          <caret line="225" column="0" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3822#3823#0" expanded="true" />
-            <element signature="e#3864#3865#0" expanded="true" />
-            <element signature="e#5013#5014#0" expanded="true" />
-            <element signature="e#5053#5054#0" expanded="true" />
-            <element signature="e#5500#5501#0" expanded="true" />
-            <element signature="e#5535#5536#0" expanded="true" />
-            <element signature="e#6293#6294#0" expanded="true" />
-            <element signature="e#6366#6367#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="191">
+          <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/eventLoop/EventLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="105" column="28" selection-start-line="105" selection-start-column="28" selection-end-line="105" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1918,19 +1918,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/Channel/ClientChannel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/eventLoop/PriorityScheduledThreadPoolExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/eventLoop/EventLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="95" column="39" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="-243">
+          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3819#3820#0" expanded="true" />
+            <element signature="e#3861#3862#0" expanded="true" />
+            <element signature="e#5010#5011#0" expanded="true" />
+            <element signature="e#5050#5051#0" expanded="true" />
+            <element signature="e#5497#5498#0" expanded="true" />
+            <element signature="e#5532#5533#0" expanded="true" />
+            <element signature="e#6290#6291#0" expanded="true" />
+            <element signature="e#6363#6364#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
