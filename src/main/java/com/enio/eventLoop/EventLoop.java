@@ -2,6 +2,7 @@ package com.enio.eventLoop;
 
 import com.enio.Channel.Channel;
 import com.enio.eventLoop.event.Event;
+import com.enio.eventLoop.event.ScheduledEvent;
 
 import java.io.IOException;
 import java.nio.channels.SelectionKey;
@@ -9,16 +10,16 @@ import java.nio.channels.Selector;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.*;
+import java.util.concurrent.locks.Lock;
 
 /**
  * Created by yuan on 10/8/16.
  */
 public class EventLoop {
 //    private ExecutorService executorService= Executors.newSingleThreadScheduledExecutor();
-    private ExecutorService executorService=new PriorityThreadPoolExecutor(1,1,1,TimeUnit.SECONDS,new PriorityBlockingQueue<Runnable>());
+    private ScheduledExecutorService executorService=new PriorityScheduledThreadPoolExecutor(1);
     private Selector selector;
     private volatile boolean isEnd=false;
-
     public void terminate(){
         this.isEnd=true;
     }
@@ -28,6 +29,7 @@ public class EventLoop {
     }
 
     public EventLoop(){
+        Lock l;
         try {
             this.selector=Selector.open();
             startEventLoop();
@@ -70,24 +72,28 @@ public class EventLoop {
      * The eventLoop start loop
      */
     private void startEventLoop() {
-        executorService.submit(new Event<Object>(Event.Priority.Low) {
+        executorService.scheduleWithFixedDelay(new ScheduledEvent(Event.Priority.Low) {
             @Override
-            public Object call() throws Exception {
-                selector.select(100);
-                Set<SelectionKey> keys=selector.selectedKeys();
-                Iterator<SelectionKey> iterator=keys.iterator();
-                SelectionKey key=null;
-                while(iterator.hasNext()){
-                    key=iterator.next();
-                    Channel channel= (Channel) key.attachment();
-                    channel.handle();
-                    iterator.remove();
+            public void run()  {
+                try {
+                    selector.select(1);
+                    Set<SelectionKey> keys = selector.selectedKeys();
+                    Iterator<SelectionKey> iterator = keys.iterator();
+                    SelectionKey key = null;
+                    while (iterator.hasNext()) {
+                        key = iterator.next();
+                        Channel channel = (Channel) key.attachment();
+                        channel.handle();
+                        iterator.remove();
+                    }
+//                    if (!isEnd)
+//                        executorService.submit(this);
+                }catch (Throwable e){
+                    e.printStackTrace();
+                    return;
                 }
-                if(!isEnd)
-                    executorService.submit(this);
-                return null;
             }
-        });
+        },0,100,TimeUnit.MILLISECONDS);
     }
 
     public void shutdown(){
