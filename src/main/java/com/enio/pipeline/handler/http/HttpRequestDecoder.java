@@ -45,10 +45,10 @@ public class HttpRequestDecoder implements InHandler{
             isLoop=false;
             switch (decodeState) {
                 case HeaderDecoding:
-                    decodeHeader();
+                    isLoop=decodeHeader();
                     break;
                 case BodyDecodng:
-                    decodeBody();
+                    isLoop=decodeBody();
                     break;
                 default:
                     break;
@@ -75,7 +75,7 @@ public class HttpRequestDecoder implements InHandler{
     /**
      * Decode the header of the http request
      */
-    private void decodeHeader() {
+    private boolean decodeHeader() {
         if(httpRequest==null){
             httpRequest=new HttpRequest();
         }
@@ -85,7 +85,7 @@ public class HttpRequestDecoder implements InHandler{
                 String[] firstLineTokens=line.split(" ",3);
                 if(firstLineTokens.length<3){
                     decodeState=DecodeState.Error;
-                    return;
+                    return false;
                 }
                 httpRequest.setMethod(firstLineTokens[0]);
                 httpRequest.setVersion(firstLineTokens[2]);
@@ -93,7 +93,7 @@ public class HttpRequestDecoder implements InHandler{
                 String[] tuple=line.split(":",2);
                 if(tuple.length!=2){
                     decodeState=DecodeState.Error;
-                    return;
+                    return false;
                 }
                 httpRequest.addHeader(tuple[0].trim(),tuple[1].trim());
             }
@@ -101,13 +101,17 @@ public class HttpRequestDecoder implements InHandler{
         }
         if(line!=null){
             String lengthStr=httpRequest.getHeader(HttpProtocol.HTTP_HEADER_CONTENT_LENGTH);
+            String contentType=httpRequest.getHeader(HttpProtocol.HTTP_HEADER_CONTENT_TYPE);
             if(lengthStr!=null){
                 bodyLength=Integer.valueOf(lengthStr);
                 decodeState=DecodeState.BodyDecodng;
-            }else{
+                return true;
+            }else {
                 decodeState=DecodeState.Completed;
+                return true;
             }
         }
+        return false;
     }
 
     private String readLine(EByteBuffer buffer) {
@@ -135,8 +139,19 @@ public class HttpRequestDecoder implements InHandler{
     /**
      * Decode the payload of the http request
      */
-    private void decodeBody() {
-
+    private boolean decodeBody() {
+        if(byteBuffer.curLength()<bodyLength)
+            return false;
+        byte[] body=new byte[bodyLength];
+        byteBuffer.read(body);
+        String contentType=httpRequest.getHeader(HttpProtocol.HTTP_HEADER_CONTENT_TYPE);
+        if(contentType.equals(HttpProtocol.CONTENT_TYPE_APPLICATION_JSON)){
+            String jsonStr=new String(body);
+            System.out.println(jsonStr);
+            decodeState=DecodeState.Completed;
+            return true;
+        }
+        return false;
     }
 
 
