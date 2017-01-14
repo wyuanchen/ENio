@@ -7,8 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0466fb31-b12f-4c17-85ca-885bd57c9e6a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/enio/JSONTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/PriorityScheduledThreadPoolExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/PriorityScheduledThreadPoolExecutor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/enio.iml" afterPath="$PROJECT_DIR$/enio.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/EventLoop.java" afterPath="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/EventLoop.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolReceiver.java" afterPath="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolReceiver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/enio/protocol/http/HttpProtocol.java" afterPath="$PROJECT_DIR$/src/main/java/com/enio/protocol/http/HttpProtocol.java" />
     </list>
     <ignored path="enio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,61 +38,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="EventLoop.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/eventLoop/EventLoop.java">
+      <file leaf-file-name="JSONTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/enio/JSONTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="105" column="28" selection-start-line="105" selection-start-column="28" selection-end-line="105" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientChannel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/Channel/ClientChannel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="danmu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/danmu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="186" column="10" selection-start-line="186" selection-start-column="10" selection-end-line="186" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PriorityScheduledThreadPoolExecutor.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/eventLoop/PriorityScheduledThreadPoolExecutor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-243">
-              <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+            <state relative-caret-position="621">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3819#3820#0" expanded="true" />
-                <element signature="e#3861#3862#0" expanded="true" />
-                <element signature="e#5010#5011#0" expanded="true" />
-                <element signature="e#5050#5051#0" expanded="true" />
-                <element signature="e#5497#5498#0" expanded="true" />
-                <element signature="e#5532#5533#0" expanded="true" />
-                <element signature="e#6290#6291#0" expanded="true" />
-                <element signature="e#6363#6364#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FutureTask.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/jdk/jdk1.8.0_71/src.zip!/java/util/concurrent/FutureTask.java">
+      <file leaf-file-name="HttpRequestDecoder.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/http/HttpRequestDecoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5217">
-              <caret line="62" column="46" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
+            <state relative-caret-position="2669">
+              <caret line="110" column="28" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpProtocol.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/protocol/http/HttpProtocol.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="999">
+              <caret line="42" column="80" selection-start-line="42" selection-start-column="80" selection-end-line="42" selection-end-column="80" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/ServerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1242">
+              <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -115,8 +103,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/enio/Channel/ServerChannel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/impl/SimpleInHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/event/ChannelCloseEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/event/SendMessageEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/event/BindEvent.java" />
@@ -132,8 +118,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/http/HttpResponseEncoder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/protocol/http/HttpResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/protocol/http/HttpRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/enio/protocol/http/HttpProtocol.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/http/HttpRequestDecoder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/PipelineHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/CloseHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/InitialHandler.java" />
@@ -150,22 +134,26 @@
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/Channel/Channel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/ServerBootstraper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolReceiver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/demo/DanmuDemo.java" />
         <option value="$PROJECT_DIR$/src/danmu.html" />
         <option value="$PROJECT_DIR$/src/websocket.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/util/UnsignedByteHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolDecoder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/enio/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/event/EventPriority.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/event/ScheduledEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/PP.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/PriorityThreadPoolExecutor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/Channel/ClientChannel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/event/Event.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/EventLoop.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/PriorityScheduledThreadPoolExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolReceiver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/enio/eventLoop/EventLoop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandler.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/enio/Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/enio/JSONTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/enio/protocol/http/HttpProtocol.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/http/HttpRequestDecoder.java" />
       </list>
     </option>
   </component>
@@ -188,9 +176,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="-8" />
+    <option name="y" value="30" />
     <option name="width" value="1920" />
-    <option name="height" value="1088" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -203,7 +191,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -216,348 +204,14 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pipeline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pipeline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="handler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="message" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="initializer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eventLoop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PriorityScheduledThreadPoolExecutor.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eventLoop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eventLoop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="event" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Channel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="Thread&#9;FILE&#9;jar:///usr/jdk/jdk1.8.0_71/src.zip!/java/util/concurrent/ThreadPoolExecutor.java&#10;Test&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Test.java&#10;Encoder&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolEncoder.java&#10;Deco&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/http/HttpRequestDecoder.java&#10;Decod&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/http/HttpRequestDecoder.java&#10;Decoder&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolDecoder.java&#10;^&#9;null&#9;null&#10;danm&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/danmu.html&#10;web&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/websocket.js&#10;webs&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/websocket.js&#10;Clien&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/ClientChannel.java&#10;dan&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/danmu.html&#10;Pipe&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/Pipeline.java&#10;Chan&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/Channel.java&#10;inde&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/index.html&#10;js&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/websocket.js&#10;Serve&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/ServerTest.java&#10;index&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/index.html&#10;Mess&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/message/Message.java&#10;Web&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/protocol/websocket/WebSocketProtocol.java&#10;http&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/http/HttpRequestDecoder.java&#10;webso&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/protocol/websocket/WebSocketFrame.java&#10;En&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolEncoder.java&#10;pip&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/Pipeline.java&#10;ini&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/InitialHandler.java&#10;Ini&#9;PSI&#9;JAVA://com.enio.pipeline.handler.InitialHandler&#10;Channel&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/Channel.java&#10;Server&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/ServerChannel.java&#10;Client&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/ClientChannel.java&#10;channel&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/Channel.java&#10;simpl&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/impl/SimpleInHandler.java&#10;CLien&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/ClientChannel.java&#10;test&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/ServerTest.java&#10;wEB&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandshakeHandler.java&#10;Reque&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/protocol/http/HttpRequest.java&#10;Http&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/http/HttpResponseEncoder.java&#10;Res&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/protocol/http/HttpResponse.java&#10;Respons&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/protocol/http/HttpResponse.java&#10;Respn&#9;FILE&#9;jar:///usr/jdk/jdk1.8.0_71/jre/lib/deploy.jar!/com/sun/deploy/resources/image/progress.png&#10;Pro&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/protocol/http/HttpProtocol.java&#10;Tes&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Test.java&#10;Eve&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/eventLoop/EventLoop.java&#10;Even&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/eventLoop/EventLoop.java&#10;Event&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/eventLoop/EventLoop.java&#10;Pi&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/Pipeline.java&#10;client&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/ClientSocketBootstraper.java" />
+    <property name="SearchEverywhereHistoryKey" value="po&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/pom.xml&#10;Loop&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/eventLoop/EventLoop.java&#10;Thread&#9;FILE&#9;jar:///usr/jdk/jdk1.8.0_71/src.zip!/java/util/concurrent/ThreadPoolExecutor.java&#10;Test&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Test.java&#10;Encoder&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolEncoder.java&#10;Deco&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/http/HttpRequestDecoder.java&#10;Decod&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/http/HttpRequestDecoder.java&#10;Decoder&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolDecoder.java&#10;^&#9;null&#9;null&#10;danm&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/danmu.html&#10;web&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/websocket.js&#10;webs&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/websocket.js&#10;Clien&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/ClientChannel.java&#10;dan&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/danmu.html&#10;Pipe&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/Pipeline.java&#10;Chan&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/Channel.java&#10;inde&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/index.html&#10;js&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/websocket.js&#10;Serve&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/ServerTest.java&#10;index&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/index.html&#10;Mess&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/message/Message.java&#10;Web&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/protocol/websocket/WebSocketProtocol.java&#10;http&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/http/HttpRequestDecoder.java&#10;webso&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/protocol/websocket/WebSocketFrame.java&#10;En&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolEncoder.java&#10;pip&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/Pipeline.java&#10;ini&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/InitialHandler.java&#10;Ini&#9;PSI&#9;JAVA://com.enio.pipeline.handler.InitialHandler&#10;Channel&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/Channel.java&#10;Server&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/ServerChannel.java&#10;Client&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/ClientChannel.java&#10;channel&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/Channel.java&#10;simpl&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/impl/SimpleInHandler.java&#10;CLien&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Channel/ClientChannel.java&#10;test&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/ServerTest.java&#10;wEB&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandshakeHandler.java&#10;Reque&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/protocol/http/HttpRequest.java&#10;Http&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/handler/http/HttpResponseEncoder.java&#10;Res&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/protocol/http/HttpResponse.java&#10;Respons&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/protocol/http/HttpResponse.java&#10;Respn&#9;FILE&#9;jar:///usr/jdk/jdk1.8.0_71/jre/lib/deploy.jar!/com/sun/deploy/resources/image/progress.png&#10;Pro&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/protocol/http/HttpProtocol.java&#10;Tes&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/Test.java&#10;Eve&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/eventLoop/EventLoop.java&#10;Even&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/eventLoop/EventLoop.java&#10;Event&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/eventLoop/EventLoop.java&#10;Pi&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/pipeline/Pipeline.java&#10;client&#9;FILE&#9;file:///media/yuan/Windows8_OS/ubuntuDownload/enio/src/main/java/com/enio/ClientSocketBootstraper.java" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
@@ -568,7 +222,7 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DanmuDemo">
+  <component name="RunManager" selected="Application.JSONTest">
     <configuration default="false" name="ServerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -577,26 +231,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.enio.ServerTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="enio" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="ClientTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.enio.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.enio.ClientTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -637,6 +271,52 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.enio.demo.DanmuDemo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="enio" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="JSONTest.testServer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.enio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="enio" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.enio" />
+      <option name="MAIN_CLASS_NAME" value="com.enio.JSONTest" />
+      <option name="METHOD_NAME" value="testServer" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="JSONTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.enio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.enio.JSONTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1095,18 +775,20 @@
       <envs />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.ServerTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ClientTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Test" />
-      <item index="3" class="java.lang.String" itemvalue="Application.DanmuDemo" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Test" />
+      <item index="2" class="java.lang.String" itemvalue="Application.DanmuDemo" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.JSONTest.testServer" />
+      <item index="4" class="java.lang.String" itemvalue="Application.JSONTest" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.DanmuDemo" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Test" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ServerTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ClientTest" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.JSONTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.JSONTest.testServer" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="3" class="java.lang.String" itemvalue="Application.DanmuDemo" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ServerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1149,7 +831,15 @@
       <workItem from="1479543812455" duration="2836000" />
       <workItem from="1480312855452" duration="32604000" />
       <workItem from="1480506730177" duration="9548000" />
-      <workItem from="1480820014141" duration="19786000" />
+      <workItem from="1480820014141" duration="19827000" />
+      <workItem from="1480863704194" duration="2239000" />
+      <workItem from="1481528306298" duration="5612000" />
+      <workItem from="1483689667295" duration="144000" />
+      <workItem from="1483759181633" duration="45000" />
+      <workItem from="1484112448168" duration="8380000" />
+      <workItem from="1484403854153" duration="16000" />
+      <workItem from="1484410726429" duration="4000" />
+      <workItem from="1484410735230" duration="16000" />
     </task>
     <task id="LOCAL-00001" summary="修改Handler分类，将InHandler,OutHandler,InitialHandler分离开来，并且使用CopyOnWriteArrayList来作为pipeline的handlers列表">
       <created>1478236407301</created>
@@ -1403,11 +1093,30 @@
       <option name="project" value="LOCAL" />
       <updated>1480853510864</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="微调">
+      <created>1480853686916</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1480853686916</updated>
+    </task>
+    <task id="LOCAL-00038" summary="修改HttpRequestDecoder的body解码过程">
+      <created>1484129128510</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1484129128510</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="JSONTest_testServer - 2017.01.11 at 17h 30m 37s.xml">
+      <configuration name="JSONTest.testServer" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="235567000" />
+    <option name="totallyTimeSpent" value="252064000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1419,34 +1128,34 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-8" width="1920" height="1088" extended-state="6" />
+    <frame x="0" y="30" width="1920" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="0" y="68" width="1920" height="1012" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32711306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.233809" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2327113" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28471476" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32723358" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43578485" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44017562" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="0" y="68" width="1920" height="1012" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1463,7 +1172,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43578485" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43578485" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1471,9 +1180,9 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="0" y="68" width="1920" height="1012" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32711306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.233809" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24111949" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23278688" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32723358" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -1491,7 +1200,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
-    <MESSAGE value="改变包结构" />
     <MESSAGE value="实现HttpRequest解码" />
     <MESSAGE value="修改HttpProtocl关于HttpMethod和HttpVersion枚举量的赋值" />
     <MESSAGE value="修改HttpProtocol为abstract class" />
@@ -1514,13 +1222,28 @@
     <MESSAGE value="调整WebSocketProtocolReceiver，使其返回String列表,并且对Websocket相关Handler进行重命名" />
     <MESSAGE value="实现弹幕Demo" />
     <MESSAGE value="修改字节位运算和创建UnsignedByteHelper提供unsigned操作" />
-    <MESSAGE value="微调" />
     <MESSAGE value="自定义ScheduledThreadPoolExecutor,实现周期和任务优先级的比较和调度,并且修改Event类结构" />
-    <option name="LAST_COMMIT_MESSAGE" value="自定义ScheduledThreadPoolExecutor,实现周期和任务优先级的比较和调度,并且修改Event类结构" />
+    <MESSAGE value="微调" />
+    <MESSAGE value="修改HttpRequestDecoder的body解码过程" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改HttpRequestDecoder的body解码过程" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="29" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/http/HttpRequestDecoder.java</url>
+          <line>144</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/http/HttpRequestDecoder.java</url>
+          <line>104</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="39" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1529,62 +1252,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/protocol/http/HttpRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="37" column="54" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/impl/SimpleInHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/buffer/EByteBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="150" column="16" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/protocol/websocket/WebSocketProtocol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/jdk/jdk1.8.0_71/src.zip!/java/util/concurrent/CopyOnWriteArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="404" column="40" selection-start-line="404" selection-start-column="40" selection-end-line="404" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandshakeResponser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/Channel/ServerChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/ServerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="46" column="59" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/message/Message.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1603,7 +1270,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1611,7 +1277,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="132" column="27" selection-start-line="132" selection-start-column="27" selection-end-line="132" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1650,31 +1315,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolDecoder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1647">
           <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/http/HttpRequestDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="63" column="35" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1689,7 +1333,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1697,9 +1340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="729">
           <caret line="60" column="50" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#1335#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1728,7 +1368,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1736,7 +1375,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="47" column="79" selection-start-line="47" selection-start-column="79" selection-end-line="47" selection-end-column="79" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1744,7 +1382,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
           <caret line="290" column="14" selection-start-line="290" selection-start-column="7" selection-end-line="290" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1752,14 +1389,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
           <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -1767,7 +1396,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="659">
           <caret line="135" column="15" selection-start-line="135" selection-start-column="15" selection-end-line="135" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1775,7 +1403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-205">
           <caret line="125" column="36" selection-start-line="125" selection-start-column="36" selection-end-line="125" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1783,7 +1410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="821">
           <caret line="645" column="17" selection-start-line="645" selection-start-column="17" selection-end-line="645" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1791,23 +1417,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/eventLoop/PP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3645">
-          <caret line="333" column="33" selection-start-line="333" selection-start-column="33" selection-end-line="333" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/eventLoop/PP.java" />
     <entry file="jar:///usr/jdk/jdk1.8.0_71/src.zip!/java/util/concurrent/Executors.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="507" column="33" selection-start-line="507" selection-start-column="33" selection-end-line="507" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1815,15 +1432,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar:///usr/jdk/jdk1.8.0_71/src.zip!/java/util/concurrent/FutureTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5217">
+        <state relative-caret-position="783">
           <caret line="62" column="46" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1831,7 +1446,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
           <caret line="111" column="11" selection-start-line="111" selection-start-column="11" selection-end-line="111" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1839,7 +1453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
           <caret line="1583" column="9" selection-start-line="1583" selection-start-column="9" selection-end-line="1583" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1847,7 +1460,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="659">
           <caret line="139" column="9" selection-start-line="139" selection-start-column="9" selection-end-line="139" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1855,10 +1467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1866,9 +1474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-          <folding>
-            <element signature="e#654#655#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1876,10 +1481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding>
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#257#258#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1887,26 +1488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2977">
           <caret line="871" column="0" selection-start-line="871" selection-start-column="0" selection-end-line="871" selection-end-column="0" />
-          <folding>
-            <element signature="e#6406#6407#0" expanded="true" />
-            <element signature="e#6446#6447#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/Channel/ClientChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/eventLoop/EventLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="105" column="28" selection-start-line="105" selection-start-column="28" selection-end-line="105" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1914,25 +1495,120 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="186" column="10" selection-start-line="186" selection-start-column="10" selection-end-line="186" selection-end-column="10" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/protocol/websocket/WebSocketProtocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/eventLoop/EventLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2835">
+          <caret line="121" column="29" selection-start-line="121" selection-start-column="29" selection-end-line="121" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/eventLoop/PriorityScheduledThreadPoolExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-243">
-          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+        <state relative-caret-position="7614">
+          <caret line="295" column="47" selection-start-line="295" selection-start-column="47" selection-end-line="295" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/Channel/ClientChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1323">
+          <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/websocket/WebSocketProtocolReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/mashape/unirest/unirest-java/1.4.9/unirest-java-1.4.9.jar!/com/mashape/unirest/http/Unirest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="108" column="40" selection-start-line="108" selection-start-column="40" selection-end-line="108" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/protocol/http/HttpRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-853">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/buffer/EByteBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="165" column="30" selection-start-line="165" selection-start-column="30" selection-end-line="165" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/enio/JSONTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3819#3820#0" expanded="true" />
-            <element signature="e#3861#3862#0" expanded="true" />
-            <element signature="e#5010#5011#0" expanded="true" />
-            <element signature="e#5050#5051#0" expanded="true" />
-            <element signature="e#5497#5498#0" expanded="true" />
-            <element signature="e#5532#5533#0" expanded="true" />
-            <element signature="e#6290#6291#0" expanded="true" />
-            <element signature="e#6363#6364#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/pipeline/handler/http/HttpRequestDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2669">
+          <caret line="110" column="28" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/protocol/http/HttpProtocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="999">
+          <caret line="42" column="80" selection-start-line="42" selection-start-column="80" selection-end-line="42" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/enio/ServerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

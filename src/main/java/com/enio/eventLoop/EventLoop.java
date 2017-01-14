@@ -111,6 +111,16 @@ public class EventLoop {
     public <T> Future<T> submit(Event<T> event){
         return executorService.submit(event);
     }
-
-
+    public ScheduledFuture<?> scheduleAtFixedRate(Runnable command,
+                                                  long initialDelay,
+                                                  long period,
+                                                  TimeUnit unit) {
+        return executorService.scheduleAtFixedRate( command, initialDelay, period, unit);
+    }
+    public ScheduledFuture<?> scheduleWithFixedDelay(Runnable command,
+                                                     long initialDelay,
+                                                     long delay,
+                                                     TimeUnit unit) {
+        return executorService.scheduleWithFixedDelay( command, initialDelay, delay, unit);
+    }
 }

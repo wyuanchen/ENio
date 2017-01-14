@@ -13,6 +13,7 @@ import java.util.List;
  * Created by yuan on 11/18/16.
  */
 public class WebSocketProtocolReceiver implements InHandler{
+    private volatile byte heartBeat=3;
 
     @Override
     public boolean handleInputMessage(Channel channel, Message message) {
@@ -34,6 +35,11 @@ public class WebSocketProtocolReceiver implements InHandler{
             case Closing:
                 System.out.println("The Websocket channel is closing!");
                 channel.disconnect();
+                break;
+            case Pong:
+            case Ping:
+                if(heartBeat<=3)
+                    heartBeat++;
                 break;
         }
     }

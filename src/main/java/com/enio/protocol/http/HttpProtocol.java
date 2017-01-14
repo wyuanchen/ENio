@@ -39,6 +39,9 @@ public abstract class HttpProtocol {
     public static final String HTTP_SEC_WEBSOCKET_ACCPET="Sec-WebSocket-Accept";
     public static final String HTTP_SEC_WEBSOCKET_PROTOCOL="Sec-WebSocket-Protocol";
 
+    public static final String HTTP_HEADER_CONTENT_TYPE="Content-Type";
+    public static final String CONTENT_TYPE_APPLICATION_JSON="application/json";
+
     protected HttpVersion version;
     protected Map<String,String> header=new HashMap<String,String>();
     protected String body;
